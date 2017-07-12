@@ -17,6 +17,112 @@ Lagoon is a framework written in Swift that makes it easy for you to organize yo
 - [Author](#author)
 - [License](#license)
 
+## Features
+- [x] Asynchronous operations
+- [x] SOLID out of the box
+- [x] Very simple writing unit tests
+- [x] Reusable business logic
+- [x] Generics
+
+## Usage
+### Look at the simple example
+Here we convert our string to number, increment and decrement it, multiply and divide by digits.
+Let's create our operations
+```swift
+
+/// Convert String to Int
+class ConvertOperation: ChainableOperationBase<String, Int> {
+    
+    override func process(inputData: String, success: @escaping (Int) -> (), failure: @escaping (Error) -> ()) {
+        
+        if let result = Int(inputData) {
+            success(result)
+        } else {
+            failure(NSError(domain: "com.incetro.Lagoon.Example", code: 1, userInfo: nil))
+        }
+    }
+}
+
+/// Increment the given number
+class IncrementOperation: ChainableOperationBase<Int, Int> {
+    
+    override func process(inputData: Int, success: @escaping (Int) -> (), failure: @escaping (Error) -> ()) {
+        success(inputData + 1)
+    }
+}
+
+/// Decrement the given number
+class DecrementOperation: ChainableOperationBase<Int, Int> {
+    
+    override func process(inputData: Int, success: @escaping (Int) -> (), failure: @escaping (Error) -> ()) {
+        success(inputData - 1)
+    }
+}
+
+/// Multiply the given number
+class MultiplicationOperation: ChainableOperationBase<Int, Int> {
+    
+    let mult: Int
+    
+    init(with mult: Int) {
+        self.mult = mult
+    }
+    
+    override func process(inputData: Int, success: @escaping (Int) -> (), failure: @escaping (Error) -> ()) {
+        success(inputData * self.mult)
+    }
+}
+
+/// Make array of digits from the given number
+class ArrayOperation: ChainableOperationBase<Int, [Int]> {
+    
+    override func process(inputData: Int, success: @escaping ([Int]) -> (), failure: @escaping (Error) -> ()) {
+        
+        var result: [Int] = []
+        var number = inputData
+        
+        while number > 0 {
+            
+            result.append(number % 10)
+            number = number / 10
+        }
+        
+        success(result.reversed())
+    }
+}
+```
+And make chain ```convert -> increment -> decrement -> multiplication -> array```
+```swift
+let strings = ["123", "4", "56a", "a", ""]
+        
+for string in strings {
+            
+    let convert   = ConvertOperation()
+    let increment = IncrementOperation()
+    let decrement = DecrementOperation()
+    let mult      = MultiplicationOperation(with: 125)
+    let array     = ArrayOperation()
+            
+    /// Create chain
+    let operations = [convert, increment, decrement, mult, array]
+            
+    /// We expect Int array as output type
+    let compoundOperation = CompoundOperation.default(withOutputDataType: [Int].self)
+    
+    /// Setup compound operation
+    compoundOperation.configure(withChainableOperations: operations, inputData: string, success: { result in
+                
+        print(result)
+                
+    }, failure: { error in
+                
+        print(error.localizedDescription)
+    })
+    
+    /// Start it!
+    Lagoon.add(operation: compoundOperation)
+}
+```
 ## Requirements
 - iOS 8.0+ / macOS 10.9+ / tvOS 9.0+ / watchOS 2.0+
 - Xcode 8.1, 8.2, 8.3, and 9.0
