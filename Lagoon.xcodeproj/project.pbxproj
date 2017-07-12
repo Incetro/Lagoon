@@ -1,0 +1,1191 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		337A05141F150DD10062C06D /* Lagoon.h in Headers */ = {isa = PBXBuildFile; fileRef = 337A05121F150DD10062C06D /* Lagoon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		337A052F1F150FBF0062C06D /* Lagoon.h in Headers */ = {isa = PBXBuildFile; fileRef = 337A05121F150DD10062C06D /* Lagoon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		337A05701F1535C20062C06D /* SchedulerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05411F1535C20062C06D /* SchedulerError.swift */; };
+		337A05711F1535C20062C06D /* OperationBufferImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05441F1535C20062C06D /* OperationBufferImplementation.swift */; };
+		337A05721F1535C20062C06D /* OperationBuffersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05461F1535C20062C06D /* OperationBuffersFactory.swift */; };
+		337A05731F1535C20062C06D /* OperationBuffersFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05471F1535C20062C06D /* OperationBuffersFactoryImplementation.swift */; };
+		337A05741F1535C20062C06D /* OperationBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05491F1535C20062C06D /* OperationBuffer.swift */; };
+		337A05751F1535C20062C06D /* OperationChainConfiguratorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A054C1F1535C20062C06D /* OperationChainConfiguratorImplementation.swift */; };
+		337A05761F1535C20062C06D /* OperationChainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A054E1F1535C20062C06D /* OperationChainConfigurator.swift */; };
+		337A05771F1535C20062C06D /* ControlFlowOperationChainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05511F1535C20062C06D /* ControlFlowOperationChainer.swift */; };
+		337A05781F1535C20062C06D /* DataFlowOperationChainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05521F1535C20062C06D /* DataFlowOperationChainer.swift */; };
+		337A05791F1535C20062C06D /* OperationChainersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05541F1535C20062C06D /* OperationChainersFactory.swift */; };
+		337A057A1F1535C20062C06D /* OperationChainersFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05551F1535C20062C06D /* OperationChainersFactoryImplementation.swift */; };
+		337A057B1F1535C20062C06D /* OperationChainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05571F1535C20062C06D /* OperationChainer.swift */; };
+		337A057C1F1535C20062C06D /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05591F1535C20062C06D /* OperationQueue.swift */; };
+		337A057D1F1535C20062C06D /* AsyncChainableOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A055C1F1535C20062C06D /* AsyncChainableOperation.swift */; };
+		337A057E1F1535C20062C06D /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A055D1F1535C20062C06D /* AsyncOperation.swift */; };
+		337A057F1F1535C20062C06D /* ChainableOperationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A055F1F1535C20062C06D /* ChainableOperationBase.swift */; };
+		337A05801F1535C20062C06D /* CompoundOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05611F1535C20062C06D /* CompoundOperation.swift */; };
+		337A05811F1535C20062C06D /* ChainableOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05641F1535C20062C06D /* ChainableOperation.swift */; };
+		337A05821F1535C20062C06D /* ChainableOperationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05651F1535C20062C06D /* ChainableOperationDelegate.swift */; };
+		337A05831F1535C20062C06D /* ChainableOperationInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05661F1535C20062C06D /* ChainableOperationInput.swift */; };
+		337A05841F1535C20062C06D /* ChainableOperationOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05671F1535C20062C06D /* ChainableOperationOutput.swift */; };
+		337A05851F1535C20062C06D /* CompoundOperationQueueInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05691F1535C20062C06D /* CompoundOperationQueueInput.swift */; };
+		337A05861F1535C20062C06D /* CompoundOperationQueueOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A056A1F1535C20062C06D /* CompoundOperationQueueOutput.swift */; };
+		337A05871F1535C20062C06D /* OperationsSchedulerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A056D1F1535C20062C06D /* OperationsSchedulerImplementation.swift */; };
+		337A058B1F15440C0062C06D /* OperationsScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A058A1F15440C0062C06D /* OperationsScheduler.swift */; };
+		337A058D1F1544F70062C06D /* Lagoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A058C1F1544F70062C06D /* Lagoon.swift */; };
+		337A05971F1548F60062C06D /* Lagoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337A04F81F150D5F0062C06D /* Lagoon.framework */; };
+		337A05A61F1549070062C06D /* Lagoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337A05061F150D7C0062C06D /* Lagoon.framework */; };
+		337A05AF1F15497C0062C06D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 337A05AE1F15497C0062C06D /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		337A05981F1548F60062C06D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 337A04ED1F150D450062C06D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 337A04F71F150D5F0062C06D;
+			remoteInfo = "Lagoon iOS";
+		};
+		337A05A71F1549070062C06D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 337A04ED1F150D450062C06D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 337A05051F150D7C0062C06D;
+			remoteInfo = "Lagoon macOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		337A04F81F150D5F0062C06D /* Lagoon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lagoon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		337A05061F150D7C0062C06D /* Lagoon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lagoon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		337A05111F150DD10062C06D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		337A05121F150DD10062C06D /* Lagoon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lagoon.h; sourceTree = "<group>"; };
+		337A05411F1535C20062C06D /* SchedulerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulerError.swift; sourceTree = "<group>"; };
+		337A05441F1535C20062C06D /* OperationBufferImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationBufferImplementation.swift; sourceTree = "<group>"; };
+		337A05461F1535C20062C06D /* OperationBuffersFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationBuffersFactory.swift; sourceTree = "<group>"; };
+		337A05471F1535C20062C06D /* OperationBuffersFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationBuffersFactoryImplementation.swift; sourceTree = "<group>"; };
+		337A05491F1535C20062C06D /* OperationBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationBuffer.swift; sourceTree = "<group>"; };
+		337A054C1F1535C20062C06D /* OperationChainConfiguratorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainConfiguratorImplementation.swift; sourceTree = "<group>"; };
+		337A054E1F1535C20062C06D /* OperationChainConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainConfigurator.swift; sourceTree = "<group>"; };
+		337A05511F1535C20062C06D /* ControlFlowOperationChainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlFlowOperationChainer.swift; sourceTree = "<group>"; };
+		337A05521F1535C20062C06D /* DataFlowOperationChainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFlowOperationChainer.swift; sourceTree = "<group>"; };
+		337A05541F1535C20062C06D /* OperationChainersFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainersFactory.swift; sourceTree = "<group>"; };
+		337A05551F1535C20062C06D /* OperationChainersFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainersFactoryImplementation.swift; sourceTree = "<group>"; };
+		337A05571F1535C20062C06D /* OperationChainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainer.swift; sourceTree = "<group>"; };
+		337A05591F1535C20062C06D /* OperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationQueue.swift; sourceTree = "<group>"; };
+		337A055C1F1535C20062C06D /* AsyncChainableOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncChainableOperation.swift; sourceTree = "<group>"; };
+		337A055D1F1535C20062C06D /* AsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
+		337A055F1F1535C20062C06D /* ChainableOperationBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainableOperationBase.swift; sourceTree = "<group>"; };
+		337A05611F1535C20062C06D /* CompoundOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompoundOperation.swift; sourceTree = "<group>"; };
+		337A05641F1535C20062C06D /* ChainableOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainableOperation.swift; sourceTree = "<group>"; };
+		337A05651F1535C20062C06D /* ChainableOperationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainableOperationDelegate.swift; sourceTree = "<group>"; };
+		337A05661F1535C20062C06D /* ChainableOperationInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainableOperationInput.swift; sourceTree = "<group>"; };
+		337A05671F1535C20062C06D /* ChainableOperationOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainableOperationOutput.swift; sourceTree = "<group>"; };
+		337A05691F1535C20062C06D /* CompoundOperationQueueInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompoundOperationQueueInput.swift; sourceTree = "<group>"; };
+		337A056A1F1535C20062C06D /* CompoundOperationQueueOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompoundOperationQueueOutput.swift; sourceTree = "<group>"; };
+		337A056D1F1535C20062C06D /* OperationsSchedulerImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsSchedulerImplementation.swift; sourceTree = "<group>"; };
+		337A058A1F15440C0062C06D /* OperationsScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsScheduler.swift; sourceTree = "<group>"; };
+		337A058C1F1544F70062C06D /* Lagoon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lagoon.swift; sourceTree = "<group>"; };
+		337A05921F1548F60062C06D /* Lagoon iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lagoon iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		337A05A11F1549070062C06D /* Lagoon macOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lagoon macOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		337A05AE1F15497C0062C06D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		339EA2BE1F163ED40041D6E6 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		337A04F41F150D5F0062C06D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337A05021F150D7C0062C06D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337A058F1F1548F60062C06D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				337A05971F1548F60062C06D /* Lagoon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337A059E1F1549070062C06D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				337A05A61F1549070062C06D /* Lagoon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		337A04EC1F150D450062C06D = {
+			isa = PBXGroup;
+			children = (
+				339EA2BE1F163ED40041D6E6 /* Package.swift */,
+				337A050E1F150DD10062C06D /* Sources */,
+				337A05AC1F15497C0062C06D /* Tests */,
+				337A04F91F150D5F0062C06D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		337A04F91F150D5F0062C06D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				337A04F81F150D5F0062C06D /* Lagoon.framework */,
+				337A05061F150D7C0062C06D /* Lagoon.framework */,
+				337A05921F1548F60062C06D /* Lagoon iOS-Tests.xctest */,
+				337A05A11F1549070062C06D /* Lagoon macOS-Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		337A050E1F150DD10062C06D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				337A050F1F150DD10062C06D /* Lagoon */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		337A050F1F150DD10062C06D /* Lagoon */ = {
+			isa = PBXGroup;
+			children = (
+				337A053D1F1535C20062C06D /* Sources */,
+				337A05101F150DD10062C06D /* Supporting */,
+			);
+			path = Lagoon;
+			sourceTree = "<group>";
+		};
+		337A05101F150DD10062C06D /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				337A05111F150DD10062C06D /* Info.plist */,
+				337A05121F150DD10062C06D /* Lagoon.h */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		337A053D1F1535C20062C06D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				337A053E1F1535C20062C06D /* Internal */,
+				337A05581F1535C20062C06D /* OperationQueue */,
+				337A055A1F1535C20062C06D /* Operations */,
+				337A05621F1535C20062C06D /* Protocols */,
+				337A056B1F1535C20062C06D /* Scheduler */,
+				337A058C1F1544F70062C06D /* Lagoon.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		337A053E1F1535C20062C06D /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				337A053F1F1535C20062C06D /* Errors */,
+				337A05421F1535C20062C06D /* OperationBuffer */,
+				337A054A1F1535C20062C06D /* OperationChainConfigurator */,
+				337A054F1F1535C20062C06D /* OperationChainer  */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		337A053F1F1535C20062C06D /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				337A05401F1535C20062C06D /* SchedulerError */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		337A05401F1535C20062C06D /* SchedulerError */ = {
+			isa = PBXGroup;
+			children = (
+				337A05411F1535C20062C06D /* SchedulerError.swift */,
+			);
+			path = SchedulerError;
+			sourceTree = "<group>";
+		};
+		337A05421F1535C20062C06D /* OperationBuffer */ = {
+			isa = PBXGroup;
+			children = (
+				337A05431F1535C20062C06D /* Concrete */,
+				337A05451F1535C20062C06D /* Factory */,
+				337A05481F1535C20062C06D /* Protocols */,
+			);
+			path = OperationBuffer;
+			sourceTree = "<group>";
+		};
+		337A05431F1535C20062C06D /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				337A05441F1535C20062C06D /* OperationBufferImplementation.swift */,
+			);
+			path = Concrete;
+			sourceTree = "<group>";
+		};
+		337A05451F1535C20062C06D /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				337A05461F1535C20062C06D /* OperationBuffersFactory.swift */,
+				337A05471F1535C20062C06D /* OperationBuffersFactoryImplementation.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		337A05481F1535C20062C06D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				337A05491F1535C20062C06D /* OperationBuffer.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		337A054A1F1535C20062C06D /* OperationChainConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				337A054B1F1535C20062C06D /* Concrete */,
+				337A054D1F1535C20062C06D /* Protocols */,
+			);
+			path = OperationChainConfigurator;
+			sourceTree = "<group>";
+		};
+		337A054B1F1535C20062C06D /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				337A054C1F1535C20062C06D /* OperationChainConfiguratorImplementation.swift */,
+			);
+			path = Concrete;
+			sourceTree = "<group>";
+		};
+		337A054D1F1535C20062C06D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				337A054E1F1535C20062C06D /* OperationChainConfigurator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		337A054F1F1535C20062C06D /* OperationChainer  */ = {
+			isa = PBXGroup;
+			children = (
+				337A05501F1535C20062C06D /* Concrete */,
+				337A05531F1535C20062C06D /* Factory */,
+				337A05561F1535C20062C06D /* Protocols */,
+			);
+			path = "OperationChainer ";
+			sourceTree = "<group>";
+		};
+		337A05501F1535C20062C06D /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				337A05511F1535C20062C06D /* ControlFlowOperationChainer.swift */,
+				337A05521F1535C20062C06D /* DataFlowOperationChainer.swift */,
+			);
+			path = Concrete;
+			sourceTree = "<group>";
+		};
+		337A05531F1535C20062C06D /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				337A05541F1535C20062C06D /* OperationChainersFactory.swift */,
+				337A05551F1535C20062C06D /* OperationChainersFactoryImplementation.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		337A05561F1535C20062C06D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				337A05571F1535C20062C06D /* OperationChainer.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		337A05581F1535C20062C06D /* OperationQueue */ = {
+			isa = PBXGroup;
+			children = (
+				337A05591F1535C20062C06D /* OperationQueue.swift */,
+			);
+			path = OperationQueue;
+			sourceTree = "<group>";
+		};
+		337A055A1F1535C20062C06D /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				337A055B1F1535C20062C06D /* AsyncOperation */,
+				337A055E1F1535C20062C06D /* ChainableOperationBase */,
+				337A05601F1535C20062C06D /* CompoundOperation */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		337A055B1F1535C20062C06D /* AsyncOperation */ = {
+			isa = PBXGroup;
+			children = (
+				337A055C1F1535C20062C06D /* AsyncChainableOperation.swift */,
+				337A055D1F1535C20062C06D /* AsyncOperation.swift */,
+			);
+			path = AsyncOperation;
+			sourceTree = "<group>";
+		};
+		337A055E1F1535C20062C06D /* ChainableOperationBase */ = {
+			isa = PBXGroup;
+			children = (
+				337A055F1F1535C20062C06D /* ChainableOperationBase.swift */,
+			);
+			path = ChainableOperationBase;
+			sourceTree = "<group>";
+		};
+		337A05601F1535C20062C06D /* CompoundOperation */ = {
+			isa = PBXGroup;
+			children = (
+				337A05611F1535C20062C06D /* CompoundOperation.swift */,
+			);
+			path = CompoundOperation;
+			sourceTree = "<group>";
+		};
+		337A05621F1535C20062C06D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				337A05631F1535C20062C06D /* ChainableOperation */,
+				337A05681F1535C20062C06D /* CompoundOperation */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		337A05631F1535C20062C06D /* ChainableOperation */ = {
+			isa = PBXGroup;
+			children = (
+				337A05641F1535C20062C06D /* ChainableOperation.swift */,
+				337A05651F1535C20062C06D /* ChainableOperationDelegate.swift */,
+				337A05661F1535C20062C06D /* ChainableOperationInput.swift */,
+				337A05671F1535C20062C06D /* ChainableOperationOutput.swift */,
+			);
+			path = ChainableOperation;
+			sourceTree = "<group>";
+		};
+		337A05681F1535C20062C06D /* CompoundOperation */ = {
+			isa = PBXGroup;
+			children = (
+				337A05691F1535C20062C06D /* CompoundOperationQueueInput.swift */,
+				337A056A1F1535C20062C06D /* CompoundOperationQueueOutput.swift */,
+			);
+			path = CompoundOperation;
+			sourceTree = "<group>";
+		};
+		337A056B1F1535C20062C06D /* Scheduler */ = {
+			isa = PBXGroup;
+			children = (
+				337A05891F1544080062C06D /* Protocols */,
+				337A056C1F1535C20062C06D /* Concrete */,
+			);
+			path = Scheduler;
+			sourceTree = "<group>";
+		};
+		337A056C1F1535C20062C06D /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				337A056D1F1535C20062C06D /* OperationsSchedulerImplementation.swift */,
+			);
+			path = Concrete;
+			sourceTree = "<group>";
+		};
+		337A05891F1544080062C06D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				337A058A1F15440C0062C06D /* OperationsScheduler.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		337A05AC1F15497C0062C06D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				337A05AD1F15497C0062C06D /* Supporting */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		337A05AD1F15497C0062C06D /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				337A05AE1F15497C0062C06D /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		337A04F51F150D5F0062C06D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				337A05141F150DD10062C06D /* Lagoon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337A05031F150D7C0062C06D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				337A052F1F150FBF0062C06D /* Lagoon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		337A04F71F150D5F0062C06D /* Lagoon iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 337A04FE1F150D5F0062C06D /* Build configuration list for PBXNativeTarget "Lagoon iOS" */;
+			buildPhases = (
+				337A04F31F150D5F0062C06D /* Sources */,
+				337A04F41F150D5F0062C06D /* Frameworks */,
+				337A04F51F150D5F0062C06D /* Headers */,
+				337A04F61F150D5F0062C06D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lagoon iOS";
+			productName = "Lagoon iOS";
+			productReference = 337A04F81F150D5F0062C06D /* Lagoon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		337A05051F150D7C0062C06D /* Lagoon macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 337A050B1F150D7C0062C06D /* Build configuration list for PBXNativeTarget "Lagoon macOS" */;
+			buildPhases = (
+				337A05011F150D7C0062C06D /* Sources */,
+				337A05021F150D7C0062C06D /* Frameworks */,
+				337A05031F150D7C0062C06D /* Headers */,
+				337A05041F150D7C0062C06D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lagoon macOS";
+			productName = "Lagoon macOS";
+			productReference = 337A05061F150D7C0062C06D /* Lagoon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		337A05911F1548F60062C06D /* Lagoon iOS-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 337A059A1F1548F60062C06D /* Build configuration list for PBXNativeTarget "Lagoon iOS-Tests" */;
+			buildPhases = (
+				337A058E1F1548F60062C06D /* Sources */,
+				337A058F1F1548F60062C06D /* Frameworks */,
+				337A05901F1548F60062C06D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				337A05991F1548F60062C06D /* PBXTargetDependency */,
+			);
+			name = "Lagoon iOS-Tests";
+			productName = "Lagoon iOS-Tests";
+			productReference = 337A05921F1548F60062C06D /* Lagoon iOS-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		337A05A01F1549070062C06D /* Lagoon macOS-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 337A05A91F1549070062C06D /* Build configuration list for PBXNativeTarget "Lagoon macOS-Tests" */;
+			buildPhases = (
+				337A059D1F1549070062C06D /* Sources */,
+				337A059E1F1549070062C06D /* Frameworks */,
+				337A059F1F1549070062C06D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				337A05A81F1549070062C06D /* PBXTargetDependency */,
+			);
+			name = "Lagoon macOS-Tests";
+			productName = "Lagoon macOS-Tests";
+			productReference = 337A05A11F1549070062C06D /* Lagoon macOS-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		337A04ED1F150D450062C06D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				TargetAttributes = {
+					337A04F71F150D5F0062C06D = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					337A05051F150D7C0062C06D = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					337A05911F1548F60062C06D = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					337A05A01F1549070062C06D = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 337A04F01F150D450062C06D /* Build configuration list for PBXProject "Lagoon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 337A04EC1F150D450062C06D;
+			productRefGroup = 337A04F91F150D5F0062C06D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				337A04F71F150D5F0062C06D /* Lagoon iOS */,
+				337A05051F150D7C0062C06D /* Lagoon macOS */,
+				337A05911F1548F60062C06D /* Lagoon iOS-Tests */,
+				337A05A01F1549070062C06D /* Lagoon macOS-Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		337A04F61F150D5F0062C06D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				337A05AF1F15497C0062C06D /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337A05041F150D7C0062C06D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337A05901F1548F60062C06D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337A059F1F1549070062C06D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		337A04F31F150D5F0062C06D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				337A05831F1535C20062C06D /* ChainableOperationInput.swift in Sources */,
+				337A05841F1535C20062C06D /* ChainableOperationOutput.swift in Sources */,
+				337A05771F1535C20062C06D /* ControlFlowOperationChainer.swift in Sources */,
+				337A05791F1535C20062C06D /* OperationChainersFactory.swift in Sources */,
+				337A05751F1535C20062C06D /* OperationChainConfiguratorImplementation.swift in Sources */,
+				337A05861F1535C20062C06D /* CompoundOperationQueueOutput.swift in Sources */,
+				337A05801F1535C20062C06D /* CompoundOperation.swift in Sources */,
+				337A057C1F1535C20062C06D /* OperationQueue.swift in Sources */,
+				337A05701F1535C20062C06D /* SchedulerError.swift in Sources */,
+				337A05721F1535C20062C06D /* OperationBuffersFactory.swift in Sources */,
+				337A05781F1535C20062C06D /* DataFlowOperationChainer.swift in Sources */,
+				337A05821F1535C20062C06D /* ChainableOperationDelegate.swift in Sources */,
+				337A057A1F1535C20062C06D /* OperationChainersFactoryImplementation.swift in Sources */,
+				337A057D1F1535C20062C06D /* AsyncChainableOperation.swift in Sources */,
+				337A05731F1535C20062C06D /* OperationBuffersFactoryImplementation.swift in Sources */,
+				337A057F1F1535C20062C06D /* ChainableOperationBase.swift in Sources */,
+				337A058B1F15440C0062C06D /* OperationsScheduler.swift in Sources */,
+				337A05851F1535C20062C06D /* CompoundOperationQueueInput.swift in Sources */,
+				337A057B1F1535C20062C06D /* OperationChainer.swift in Sources */,
+				337A058D1F1544F70062C06D /* Lagoon.swift in Sources */,
+				337A05711F1535C20062C06D /* OperationBufferImplementation.swift in Sources */,
+				337A05871F1535C20062C06D /* OperationsSchedulerImplementation.swift in Sources */,
+				337A05741F1535C20062C06D /* OperationBuffer.swift in Sources */,
+				337A057E1F1535C20062C06D /* AsyncOperation.swift in Sources */,
+				337A05761F1535C20062C06D /* OperationChainConfigurator.swift in Sources */,
+				337A05811F1535C20062C06D /* ChainableOperation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337A05011F150D7C0062C06D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337A058E1F1548F60062C06D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		337A059D1F1549070062C06D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		337A05991F1548F60062C06D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 337A04F71F150D5F0062C06D /* Lagoon iOS */;
+			targetProxy = 337A05981F1548F60062C06D /* PBXContainerItemProxy */;
+		};
+		337A05A81F1549070062C06D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 337A05051F150D7C0062C06D /* Lagoon macOS */;
+			targetProxy = 337A05A71F1549070062C06D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		337A04F11F150D450062C06D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		337A04F21F150D450062C06D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		337A04FF1F150D5F0062C06D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sources/Lagoon/Supporting/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.Lagoon-iOS";
+				PRODUCT_NAME = Lagoon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		337A05001F150D5F0062C06D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sources/Lagoon/Supporting/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.Lagoon-iOS";
+				PRODUCT_NAME = Lagoon;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		337A050C1F150D7C0062C06D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sources/Lagoon/Supporting/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.Lagoon-macOS";
+				PRODUCT_NAME = Lagoon;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		337A050D1F150D7C0062C06D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sources/Lagoon/Supporting/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.Lagoon-macOS";
+				PRODUCT_NAME = Lagoon;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		337A059B1F1548F60062C06D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/Supporting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.Lagoon-iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		337A059C1F1548F60062C06D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/Supporting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.Lagoon-iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		337A05AA1F1549070062C06D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/Supporting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.Lagoon-macOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		337A05AB1F1549070062C06D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Tests/Supporting/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.incetro.Lagoon-macOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		337A04F01F150D450062C06D /* Build configuration list for PBXProject "Lagoon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				337A04F11F150D450062C06D /* Debug */,
+				337A04F21F150D450062C06D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		337A04FE1F150D5F0062C06D /* Build configuration list for PBXNativeTarget "Lagoon iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				337A04FF1F150D5F0062C06D /* Debug */,
+				337A05001F150D5F0062C06D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		337A050B1F150D7C0062C06D /* Build configuration list for PBXNativeTarget "Lagoon macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				337A050C1F150D7C0062C06D /* Debug */,
+				337A050D1F150D7C0062C06D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		337A059A1F1548F60062C06D /* Build configuration list for PBXNativeTarget "Lagoon iOS-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				337A059B1F1548F60062C06D /* Debug */,
+				337A059C1F1548F60062C06D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		337A05A91F1549070062C06D /* Build configuration list for PBXNativeTarget "Lagoon macOS-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				337A05AA1F1549070062C06D /* Debug */,
+				337A05AB1F1549070062C06D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 337A04ED1F150D450062C06D /* Project object */;
+}
