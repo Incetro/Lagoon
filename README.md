@@ -123,8 +123,82 @@ for string in strings {
     Lagoon.add(operation: compoundOperation)
 }
 ```
+## Advanced usage
+Okay, how can you use it in the real projects? Look at this.
+```swift
+// MARK: - RequestDataSigningOperation
+class RequestDataSigningOperation: ChainableOperationBase<RequestDataModel, RequestDataModel> {
+    
+    private let requestSigner: RequestDataSigner
+    
+    init(withRequestSigner requestSigner: RequestDataSigner) {
+        
+        self.requestSigner = requestSigner
+    }
+    
+    override func process(inputData: RequestDataModel, success: @escaping (RequestDataModel) -> (), failure: @escaping (Error) -> ()) {
+        
+        let signedRequestDataModel = requestSigner.signRequestDataModel(inputData)
+        
+        success(signedRequestDataModel)
+    }
+}
+
+// MARK: - RequestConfigurationOperation
+class RequestConfigurationOperation: ChainableOperationBase<RequestDataModel, URLRequest> {
+    
+    private let requestConfigurator: RequestConfigurator
+    private let method: HTTPMethod
+    private let serviceName: String?
+    private let urlParameters: [String]
+    private let queryType: QueryType
+    
+    init(configurator: RequestConfigurator, method: HTTPMethod, type: QueryType, serviceName: String?, urlParameters: [String]) {
+        
+        self.requestConfigurator  = configurator
+        
+        self.method        = method
+        self.queryType     = type
+        self.serviceName   = serviceName
+        self.urlParameters = urlParameters
+    }
+    
+    // MARK: - ChainableOperationBase
+    
+    override func process(inputData: RequestDataModel, success: @escaping (URLRequest) -> (), failure: @escaping (Error) -> ()) {
+        
+        let request = requestConfigurator.createRequest(withMethod:       self.method,
+                                                        type:             self.queryType,
+                                                        serviceName:      self.serviceName,
+                                                        urlParameters:    self.urlParameters,
+                                                        requestDataModel: inputData)
+        
+        success(request)
+    }
+}
+
+/// And other operations...
+/// Then use it to make network chain
+
+let operations = [
+
+    requestDataSigningOperation,
+    requestConfigurationOperation,
+    networkRequestOperation,
+    deserializationOperation,
+    validationOperation,
+    responseCachingOperation,
+    responseMappingOperation
+]
+
+let compoundOperation = CompoundOperation.default(withOutputDataType: User.self)
+        
+compoundOperation.maxConcurrentOperationCount = 1
+        
+compoundOperation.configure(withChainableOperations: operations, inputData: inputData, success: success, failure: failure)
+```
 ## Requirements
-- iOS 8.0+ / macOS 10.9+ / tvOS 9.0+ / watchOS 2.0+
+- iOS 8.0+ / macOS 10.9+
 - Xcode 8.1, 8.2, 8.3, and 9.0
 - Swift 3.0, 3.1, 3.2, and 4.0
 
