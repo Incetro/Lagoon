@@ -49,7 +49,7 @@ open class ChainableOperationBase<I, O>: AsyncChainableOperation {
     ///   - success: Success block
     ///   - failure: Failure block
     
-    open func process(inputData: I, success: @escaping (_ processedData: O) -> (), failure: @escaping (_ error: Error) -> ()) {
+    open func process(inputData: I, success: (_ processedData: O) -> (), failure: (_ error: Error) -> ()) {
         
         fatalError("You should override the method \(#function) in a subclass")
     }
