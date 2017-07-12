@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-//! Project version number for Lagoon iOS.
-FOUNDATION_EXPORT double Lagoon_iOSVersionNumber;
+//! Project version number for Lagoon
+FOUNDATION_EXPORT double LagoonVersionNumber;
 
-//! Project version string for Lagoon iOS.
-FOUNDATION_EXPORT const unsigned char Lagoon_iOSVersionString[];
+//! Project version string for Lagoon
+FOUNDATION_EXPORT const unsigned char LagoonVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <Lagoon_iOS/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <Lagoon/PublicHeader.h>
 
 
