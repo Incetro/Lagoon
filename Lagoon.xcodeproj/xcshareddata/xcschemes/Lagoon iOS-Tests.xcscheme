@@ -16,7 +16,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "337A05911F1548F60062C06D"
+               BlueprintIdentifier = "339EA3CE1F1653950041D6E6"
                BuildableName = "Lagoon iOS-Tests.xctest"
                BlueprintName = "Lagoon iOS-Tests"
                ReferencedContainer = "container:Lagoon.xcodeproj">

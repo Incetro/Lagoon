@@ -1,6 +1,6 @@
 //
 //  LagoonTests.swift
-//  Lagoon
+//  LagoonTests
 //
 //  Created by incetro on 12/07/2017.
 //

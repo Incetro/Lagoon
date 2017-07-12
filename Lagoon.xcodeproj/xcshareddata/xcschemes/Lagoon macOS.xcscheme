@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "337A05051F150D7C0062C06D"
+               BlueprintIdentifier = "339EA3431F16521A0041D6E6"
                BuildableName = "Lagoon.framework"
                BlueprintName = "Lagoon macOS"
                ReferencedContainer = "container:Lagoon.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "337A05A01F1549070062C06D"
+               BlueprintIdentifier = "339EA3BF1F1653840041D6E6"
                BuildableName = "Lagoon macOS-Tests.xctest"
                BlueprintName = "Lagoon macOS-Tests"
                ReferencedContainer = "container:Lagoon.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "337A05051F150D7C0062C06D"
+            BlueprintIdentifier = "339EA3431F16521A0041D6E6"
             BuildableName = "Lagoon.framework"
             BlueprintName = "Lagoon macOS"
             ReferencedContainer = "container:Lagoon.xcodeproj">
@@ -64,7 +64,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "337A05051F150D7C0062C06D"
+            BlueprintIdentifier = "339EA3431F16521A0041D6E6"
             BuildableName = "Lagoon.framework"
             BlueprintName = "Lagoon macOS"
             ReferencedContainer = "container:Lagoon.xcodeproj">
@@ -82,7 +82,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "337A05051F150D7C0062C06D"
+            BlueprintIdentifier = "339EA3431F16521A0041D6E6"
             BuildableName = "Lagoon.framework"
             BlueprintName = "Lagoon macOS"
             ReferencedContainer = "container:Lagoon.xcodeproj">

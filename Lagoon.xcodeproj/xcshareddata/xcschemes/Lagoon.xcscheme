@@ -20,6 +20,20 @@
                ReferencedContainer = "container:Lagoon.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "339EA3431F16521A0041D6E6"
+               BuildableName = "Lagoon.framework"
+               BlueprintName = "Lagoon macOS"
+               ReferencedContainer = "container:Lagoon.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -28,16 +42,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "339EA3CE1F1653950041D6E6"
-               BuildableName = "Lagoon iOS-Tests.xctest"
-               BlueprintName = "Lagoon iOS-Tests"
-               ReferencedContainer = "container:Lagoon.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
