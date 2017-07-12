@@ -9,63 +9,36 @@
 /* Begin PBXBuildFile section */
 		337A05141F150DD10062C06D /* Lagoon.h in Headers */ = {isa = PBXBuildFile; fileRef = 337A05121F150DD10062C06D /* Lagoon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		337A052F1F150FBF0062C06D /* Lagoon.h in Headers */ = {isa = PBXBuildFile; fileRef = 337A05121F150DD10062C06D /* Lagoon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		337A05701F1535C20062C06D /* SchedulerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05411F1535C20062C06D /* SchedulerError.swift */; };
-		337A05711F1535C20062C06D /* OperationBufferImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05441F1535C20062C06D /* OperationBufferImplementation.swift */; };
-		337A05721F1535C20062C06D /* OperationBuffersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05461F1535C20062C06D /* OperationBuffersFactory.swift */; };
-		337A05731F1535C20062C06D /* OperationBuffersFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05471F1535C20062C06D /* OperationBuffersFactoryImplementation.swift */; };
-		337A05741F1535C20062C06D /* OperationBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05491F1535C20062C06D /* OperationBuffer.swift */; };
-		337A05751F1535C20062C06D /* OperationChainConfiguratorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A054C1F1535C20062C06D /* OperationChainConfiguratorImplementation.swift */; };
-		337A05761F1535C20062C06D /* OperationChainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A054E1F1535C20062C06D /* OperationChainConfigurator.swift */; };
-		337A05771F1535C20062C06D /* ControlFlowOperationChainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05511F1535C20062C06D /* ControlFlowOperationChainer.swift */; };
-		337A05781F1535C20062C06D /* DataFlowOperationChainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05521F1535C20062C06D /* DataFlowOperationChainer.swift */; };
-		337A05791F1535C20062C06D /* OperationChainersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05541F1535C20062C06D /* OperationChainersFactory.swift */; };
-		337A057A1F1535C20062C06D /* OperationChainersFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05551F1535C20062C06D /* OperationChainersFactoryImplementation.swift */; };
-		337A057B1F1535C20062C06D /* OperationChainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05571F1535C20062C06D /* OperationChainer.swift */; };
-		337A057C1F1535C20062C06D /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05591F1535C20062C06D /* OperationQueue.swift */; };
-		337A057D1F1535C20062C06D /* AsyncChainableOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A055C1F1535C20062C06D /* AsyncChainableOperation.swift */; };
-		337A057E1F1535C20062C06D /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A055D1F1535C20062C06D /* AsyncOperation.swift */; };
-		337A057F1F1535C20062C06D /* ChainableOperationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A055F1F1535C20062C06D /* ChainableOperationBase.swift */; };
-		337A05801F1535C20062C06D /* CompoundOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05611F1535C20062C06D /* CompoundOperation.swift */; };
-		337A05811F1535C20062C06D /* ChainableOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05641F1535C20062C06D /* ChainableOperation.swift */; };
-		337A05821F1535C20062C06D /* ChainableOperationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05651F1535C20062C06D /* ChainableOperationDelegate.swift */; };
-		337A05831F1535C20062C06D /* ChainableOperationInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05661F1535C20062C06D /* ChainableOperationInput.swift */; };
-		337A05841F1535C20062C06D /* ChainableOperationOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05671F1535C20062C06D /* ChainableOperationOutput.swift */; };
-		337A05851F1535C20062C06D /* CompoundOperationQueueInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05691F1535C20062C06D /* CompoundOperationQueueInput.swift */; };
-		337A05861F1535C20062C06D /* CompoundOperationQueueOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A056A1F1535C20062C06D /* CompoundOperationQueueOutput.swift */; };
-		337A05871F1535C20062C06D /* OperationsSchedulerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A056D1F1535C20062C06D /* OperationsSchedulerImplementation.swift */; };
-		337A058B1F15440C0062C06D /* OperationsScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A058A1F15440C0062C06D /* OperationsScheduler.swift */; };
-		337A058D1F1544F70062C06D /* Lagoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A058C1F1544F70062C06D /* Lagoon.swift */; };
 		337A05971F1548F60062C06D /* Lagoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337A04F81F150D5F0062C06D /* Lagoon.framework */; };
 		337A05A61F1549070062C06D /* Lagoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337A05061F150D7C0062C06D /* Lagoon.framework */; };
-		337A05AF1F15497C0062C06D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 337A05AE1F15497C0062C06D /* Info.plist */; };
 		339EA2C11F1642A40041D6E6 /* LagoonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA2C01F1642A40041D6E6 /* LagoonTests.swift */; };
 		339EA2C21F1642A40041D6E6 /* LagoonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA2C01F1642A40041D6E6 /* LagoonTests.swift */; };
-		339EA2C31F1642C00041D6E6 /* SchedulerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05411F1535C20062C06D /* SchedulerError.swift */; };
-		339EA2C41F1642C00041D6E6 /* OperationBufferImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05441F1535C20062C06D /* OperationBufferImplementation.swift */; };
-		339EA2C51F1642C00041D6E6 /* OperationBuffersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05461F1535C20062C06D /* OperationBuffersFactory.swift */; };
-		339EA2C61F1642C00041D6E6 /* OperationBuffersFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05471F1535C20062C06D /* OperationBuffersFactoryImplementation.swift */; };
-		339EA2C71F1642C00041D6E6 /* OperationBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05491F1535C20062C06D /* OperationBuffer.swift */; };
-		339EA2C81F1642C00041D6E6 /* OperationChainConfiguratorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A054C1F1535C20062C06D /* OperationChainConfiguratorImplementation.swift */; };
-		339EA2C91F1642C00041D6E6 /* OperationChainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A054E1F1535C20062C06D /* OperationChainConfigurator.swift */; };
-		339EA2CA1F1642C00041D6E6 /* ControlFlowOperationChainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05511F1535C20062C06D /* ControlFlowOperationChainer.swift */; };
-		339EA2CB1F1642C00041D6E6 /* DataFlowOperationChainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05521F1535C20062C06D /* DataFlowOperationChainer.swift */; };
-		339EA2CC1F1642C00041D6E6 /* OperationChainersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05541F1535C20062C06D /* OperationChainersFactory.swift */; };
-		339EA2CD1F1642C00041D6E6 /* OperationChainersFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05551F1535C20062C06D /* OperationChainersFactoryImplementation.swift */; };
-		339EA2CE1F1642C00041D6E6 /* OperationChainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05571F1535C20062C06D /* OperationChainer.swift */; };
-		339EA2CF1F1642C00041D6E6 /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05591F1535C20062C06D /* OperationQueue.swift */; };
-		339EA2D01F1642C00041D6E6 /* AsyncChainableOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A055C1F1535C20062C06D /* AsyncChainableOperation.swift */; };
-		339EA2D11F1642C00041D6E6 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A055D1F1535C20062C06D /* AsyncOperation.swift */; };
-		339EA2D21F1642C00041D6E6 /* ChainableOperationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A055F1F1535C20062C06D /* ChainableOperationBase.swift */; };
-		339EA2D31F1642C00041D6E6 /* CompoundOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05611F1535C20062C06D /* CompoundOperation.swift */; };
-		339EA2D41F1642C00041D6E6 /* ChainableOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05641F1535C20062C06D /* ChainableOperation.swift */; };
-		339EA2D51F1642C00041D6E6 /* ChainableOperationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05651F1535C20062C06D /* ChainableOperationDelegate.swift */; };
-		339EA2D61F1642C00041D6E6 /* ChainableOperationInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05661F1535C20062C06D /* ChainableOperationInput.swift */; };
-		339EA2D71F1642C00041D6E6 /* ChainableOperationOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05671F1535C20062C06D /* ChainableOperationOutput.swift */; };
-		339EA2D81F1642C00041D6E6 /* CompoundOperationQueueInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05691F1535C20062C06D /* CompoundOperationQueueInput.swift */; };
-		339EA2D91F1642C00041D6E6 /* CompoundOperationQueueOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A056A1F1535C20062C06D /* CompoundOperationQueueOutput.swift */; };
-		339EA2DA1F1642C00041D6E6 /* OperationsScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A058A1F15440C0062C06D /* OperationsScheduler.swift */; };
-		339EA2DB1F1642C00041D6E6 /* OperationsSchedulerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A056D1F1535C20062C06D /* OperationsSchedulerImplementation.swift */; };
-		339EA2DC1F1642C00041D6E6 /* Lagoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A058C1F1544F70062C06D /* Lagoon.swift */; };
+		339EA3101F1644750041D6E6 /* Lagoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA2DD1F1644750041D6E6 /* Lagoon.swift */; };
+		339EA3111F1644750041D6E6 /* SchedulerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA2E11F1644750041D6E6 /* SchedulerError.swift */; };
+		339EA3121F1644750041D6E6 /* OperationBufferImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA2E41F1644750041D6E6 /* OperationBufferImplementation.swift */; };
+		339EA3131F1644750041D6E6 /* OperationBuffersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA2E61F1644750041D6E6 /* OperationBuffersFactory.swift */; };
+		339EA3141F1644750041D6E6 /* OperationBuffersFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA2E71F1644750041D6E6 /* OperationBuffersFactoryImplementation.swift */; };
+		339EA3151F1644750041D6E6 /* OperationBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA2E91F1644750041D6E6 /* OperationBuffer.swift */; };
+		339EA3161F1644750041D6E6 /* OperationChainConfiguratorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA2EC1F1644750041D6E6 /* OperationChainConfiguratorImplementation.swift */; };
+		339EA3171F1644750041D6E6 /* OperationChainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA2EE1F1644750041D6E6 /* OperationChainConfigurator.swift */; };
+		339EA3181F1644750041D6E6 /* ControlFlowOperationChainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA2F11F1644750041D6E6 /* ControlFlowOperationChainer.swift */; };
+		339EA3191F1644750041D6E6 /* DataFlowOperationChainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA2F21F1644750041D6E6 /* DataFlowOperationChainer.swift */; };
+		339EA31A1F1644750041D6E6 /* OperationChainersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA2F41F1644750041D6E6 /* OperationChainersFactory.swift */; };
+		339EA31B1F1644750041D6E6 /* OperationChainersFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA2F51F1644750041D6E6 /* OperationChainersFactoryImplementation.swift */; };
+		339EA31C1F1644750041D6E6 /* OperationChainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA2F71F1644750041D6E6 /* OperationChainer.swift */; };
+		339EA31D1F1644750041D6E6 /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA2F91F1644750041D6E6 /* OperationQueue.swift */; };
+		339EA31E1F1644750041D6E6 /* AsyncChainableOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA2FC1F1644750041D6E6 /* AsyncChainableOperation.swift */; };
+		339EA31F1F1644750041D6E6 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA2FD1F1644750041D6E6 /* AsyncOperation.swift */; };
+		339EA3201F1644750041D6E6 /* ChainableOperationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA2FF1F1644750041D6E6 /* ChainableOperationBase.swift */; };
+		339EA3211F1644750041D6E6 /* CompoundOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3011F1644750041D6E6 /* CompoundOperation.swift */; };
+		339EA3221F1644750041D6E6 /* ChainableOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3041F1644750041D6E6 /* ChainableOperation.swift */; };
+		339EA3231F1644750041D6E6 /* ChainableOperationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3051F1644750041D6E6 /* ChainableOperationDelegate.swift */; };
+		339EA3241F1644750041D6E6 /* ChainableOperationInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3061F1644750041D6E6 /* ChainableOperationInput.swift */; };
+		339EA3251F1644750041D6E6 /* ChainableOperationOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3071F1644750041D6E6 /* ChainableOperationOutput.swift */; };
+		339EA3261F1644750041D6E6 /* CompoundOperationQueueInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3091F1644750041D6E6 /* CompoundOperationQueueInput.swift */; };
+		339EA3271F1644750041D6E6 /* CompoundOperationQueueOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA30A1F1644750041D6E6 /* CompoundOperationQueueOutput.swift */; };
+		339EA3281F1644750041D6E6 /* OperationsSchedulerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA30D1F1644750041D6E6 /* OperationsSchedulerImplementation.swift */; };
+		339EA3291F1644750041D6E6 /* OperationsScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA30F1F1644750041D6E6 /* OperationsScheduler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,37 +63,37 @@
 		337A05061F150D7C0062C06D /* Lagoon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lagoon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		337A05111F150DD10062C06D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		337A05121F150DD10062C06D /* Lagoon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lagoon.h; sourceTree = "<group>"; };
-		337A05411F1535C20062C06D /* SchedulerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulerError.swift; sourceTree = "<group>"; };
-		337A05441F1535C20062C06D /* OperationBufferImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationBufferImplementation.swift; sourceTree = "<group>"; };
-		337A05461F1535C20062C06D /* OperationBuffersFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationBuffersFactory.swift; sourceTree = "<group>"; };
-		337A05471F1535C20062C06D /* OperationBuffersFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationBuffersFactoryImplementation.swift; sourceTree = "<group>"; };
-		337A05491F1535C20062C06D /* OperationBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationBuffer.swift; sourceTree = "<group>"; };
-		337A054C1F1535C20062C06D /* OperationChainConfiguratorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainConfiguratorImplementation.swift; sourceTree = "<group>"; };
-		337A054E1F1535C20062C06D /* OperationChainConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainConfigurator.swift; sourceTree = "<group>"; };
-		337A05511F1535C20062C06D /* ControlFlowOperationChainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlFlowOperationChainer.swift; sourceTree = "<group>"; };
-		337A05521F1535C20062C06D /* DataFlowOperationChainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFlowOperationChainer.swift; sourceTree = "<group>"; };
-		337A05541F1535C20062C06D /* OperationChainersFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainersFactory.swift; sourceTree = "<group>"; };
-		337A05551F1535C20062C06D /* OperationChainersFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainersFactoryImplementation.swift; sourceTree = "<group>"; };
-		337A05571F1535C20062C06D /* OperationChainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainer.swift; sourceTree = "<group>"; };
-		337A05591F1535C20062C06D /* OperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationQueue.swift; sourceTree = "<group>"; };
-		337A055C1F1535C20062C06D /* AsyncChainableOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncChainableOperation.swift; sourceTree = "<group>"; };
-		337A055D1F1535C20062C06D /* AsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
-		337A055F1F1535C20062C06D /* ChainableOperationBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainableOperationBase.swift; sourceTree = "<group>"; };
-		337A05611F1535C20062C06D /* CompoundOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompoundOperation.swift; sourceTree = "<group>"; };
-		337A05641F1535C20062C06D /* ChainableOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainableOperation.swift; sourceTree = "<group>"; };
-		337A05651F1535C20062C06D /* ChainableOperationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainableOperationDelegate.swift; sourceTree = "<group>"; };
-		337A05661F1535C20062C06D /* ChainableOperationInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainableOperationInput.swift; sourceTree = "<group>"; };
-		337A05671F1535C20062C06D /* ChainableOperationOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainableOperationOutput.swift; sourceTree = "<group>"; };
-		337A05691F1535C20062C06D /* CompoundOperationQueueInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompoundOperationQueueInput.swift; sourceTree = "<group>"; };
-		337A056A1F1535C20062C06D /* CompoundOperationQueueOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompoundOperationQueueOutput.swift; sourceTree = "<group>"; };
-		337A056D1F1535C20062C06D /* OperationsSchedulerImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsSchedulerImplementation.swift; sourceTree = "<group>"; };
-		337A058A1F15440C0062C06D /* OperationsScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsScheduler.swift; sourceTree = "<group>"; };
-		337A058C1F1544F70062C06D /* Lagoon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lagoon.swift; sourceTree = "<group>"; };
 		337A05921F1548F60062C06D /* Lagoon iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lagoon iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		337A05A11F1549070062C06D /* Lagoon macOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lagoon macOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		337A05AE1F15497C0062C06D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		339EA2BE1F163ED40041D6E6 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		339EA2C01F1642A40041D6E6 /* LagoonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LagoonTests.swift; sourceTree = "<group>"; };
+		339EA2DD1F1644750041D6E6 /* Lagoon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lagoon.swift; sourceTree = "<group>"; };
+		339EA2E11F1644750041D6E6 /* SchedulerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulerError.swift; sourceTree = "<group>"; };
+		339EA2E41F1644750041D6E6 /* OperationBufferImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationBufferImplementation.swift; sourceTree = "<group>"; };
+		339EA2E61F1644750041D6E6 /* OperationBuffersFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationBuffersFactory.swift; sourceTree = "<group>"; };
+		339EA2E71F1644750041D6E6 /* OperationBuffersFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationBuffersFactoryImplementation.swift; sourceTree = "<group>"; };
+		339EA2E91F1644750041D6E6 /* OperationBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationBuffer.swift; sourceTree = "<group>"; };
+		339EA2EC1F1644750041D6E6 /* OperationChainConfiguratorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainConfiguratorImplementation.swift; sourceTree = "<group>"; };
+		339EA2EE1F1644750041D6E6 /* OperationChainConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainConfigurator.swift; sourceTree = "<group>"; };
+		339EA2F11F1644750041D6E6 /* ControlFlowOperationChainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlFlowOperationChainer.swift; sourceTree = "<group>"; };
+		339EA2F21F1644750041D6E6 /* DataFlowOperationChainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFlowOperationChainer.swift; sourceTree = "<group>"; };
+		339EA2F41F1644750041D6E6 /* OperationChainersFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainersFactory.swift; sourceTree = "<group>"; };
+		339EA2F51F1644750041D6E6 /* OperationChainersFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainersFactoryImplementation.swift; sourceTree = "<group>"; };
+		339EA2F71F1644750041D6E6 /* OperationChainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainer.swift; sourceTree = "<group>"; };
+		339EA2F91F1644750041D6E6 /* OperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationQueue.swift; sourceTree = "<group>"; };
+		339EA2FC1F1644750041D6E6 /* AsyncChainableOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncChainableOperation.swift; sourceTree = "<group>"; };
+		339EA2FD1F1644750041D6E6 /* AsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
+		339EA2FF1F1644750041D6E6 /* ChainableOperationBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainableOperationBase.swift; sourceTree = "<group>"; };
+		339EA3011F1644750041D6E6 /* CompoundOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompoundOperation.swift; sourceTree = "<group>"; };
+		339EA3041F1644750041D6E6 /* ChainableOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainableOperation.swift; sourceTree = "<group>"; };
+		339EA3051F1644750041D6E6 /* ChainableOperationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainableOperationDelegate.swift; sourceTree = "<group>"; };
+		339EA3061F1644750041D6E6 /* ChainableOperationInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainableOperationInput.swift; sourceTree = "<group>"; };
+		339EA3071F1644750041D6E6 /* ChainableOperationOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChainableOperationOutput.swift; sourceTree = "<group>"; };
+		339EA3091F1644750041D6E6 /* CompoundOperationQueueInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompoundOperationQueueInput.swift; sourceTree = "<group>"; };
+		339EA30A1F1644750041D6E6 /* CompoundOperationQueueOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompoundOperationQueueOutput.swift; sourceTree = "<group>"; };
+		339EA30D1F1644750041D6E6 /* OperationsSchedulerImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsSchedulerImplementation.swift; sourceTree = "<group>"; };
+		339EA30F1F1644750041D6E6 /* OperationsScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsScheduler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,7 +162,12 @@
 		337A050F1F150DD10062C06D /* Lagoon */ = {
 			isa = PBXGroup;
 			children = (
-				337A053D1F1535C20062C06D /* Sources */,
+				339EA2DD1F1644750041D6E6 /* Lagoon.swift */,
+				339EA2DE1F1644750041D6E6 /* Internal */,
+				339EA2F81F1644750041D6E6 /* OperationQueue */,
+				339EA2FA1F1644750041D6E6 /* Operations */,
+				339EA3021F1644750041D6E6 /* Protocols */,
+				339EA30B1F1644750041D6E6 /* Scheduler */,
 				337A05101F150DD10062C06D /* Supporting */,
 			);
 			path = Lagoon;
@@ -202,239 +180,6 @@
 				337A05121F150DD10062C06D /* Lagoon.h */,
 			);
 			path = Supporting;
-			sourceTree = "<group>";
-		};
-		337A053D1F1535C20062C06D /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				337A053E1F1535C20062C06D /* Internal */,
-				337A05581F1535C20062C06D /* OperationQueue */,
-				337A055A1F1535C20062C06D /* Operations */,
-				337A05621F1535C20062C06D /* Protocols */,
-				337A056B1F1535C20062C06D /* Scheduler */,
-				337A058C1F1544F70062C06D /* Lagoon.swift */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		337A053E1F1535C20062C06D /* Internal */ = {
-			isa = PBXGroup;
-			children = (
-				337A053F1F1535C20062C06D /* Errors */,
-				337A05421F1535C20062C06D /* OperationBuffer */,
-				337A054A1F1535C20062C06D /* OperationChainConfigurator */,
-				337A054F1F1535C20062C06D /* OperationChainer  */,
-			);
-			path = Internal;
-			sourceTree = "<group>";
-		};
-		337A053F1F1535C20062C06D /* Errors */ = {
-			isa = PBXGroup;
-			children = (
-				337A05401F1535C20062C06D /* SchedulerError */,
-			);
-			path = Errors;
-			sourceTree = "<group>";
-		};
-		337A05401F1535C20062C06D /* SchedulerError */ = {
-			isa = PBXGroup;
-			children = (
-				337A05411F1535C20062C06D /* SchedulerError.swift */,
-			);
-			path = SchedulerError;
-			sourceTree = "<group>";
-		};
-		337A05421F1535C20062C06D /* OperationBuffer */ = {
-			isa = PBXGroup;
-			children = (
-				337A05431F1535C20062C06D /* Concrete */,
-				337A05451F1535C20062C06D /* Factory */,
-				337A05481F1535C20062C06D /* Protocols */,
-			);
-			path = OperationBuffer;
-			sourceTree = "<group>";
-		};
-		337A05431F1535C20062C06D /* Concrete */ = {
-			isa = PBXGroup;
-			children = (
-				337A05441F1535C20062C06D /* OperationBufferImplementation.swift */,
-			);
-			path = Concrete;
-			sourceTree = "<group>";
-		};
-		337A05451F1535C20062C06D /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				337A05461F1535C20062C06D /* OperationBuffersFactory.swift */,
-				337A05471F1535C20062C06D /* OperationBuffersFactoryImplementation.swift */,
-			);
-			path = Factory;
-			sourceTree = "<group>";
-		};
-		337A05481F1535C20062C06D /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				337A05491F1535C20062C06D /* OperationBuffer.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		337A054A1F1535C20062C06D /* OperationChainConfigurator */ = {
-			isa = PBXGroup;
-			children = (
-				337A054B1F1535C20062C06D /* Concrete */,
-				337A054D1F1535C20062C06D /* Protocols */,
-			);
-			path = OperationChainConfigurator;
-			sourceTree = "<group>";
-		};
-		337A054B1F1535C20062C06D /* Concrete */ = {
-			isa = PBXGroup;
-			children = (
-				337A054C1F1535C20062C06D /* OperationChainConfiguratorImplementation.swift */,
-			);
-			path = Concrete;
-			sourceTree = "<group>";
-		};
-		337A054D1F1535C20062C06D /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				337A054E1F1535C20062C06D /* OperationChainConfigurator.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		337A054F1F1535C20062C06D /* OperationChainer  */ = {
-			isa = PBXGroup;
-			children = (
-				337A05501F1535C20062C06D /* Concrete */,
-				337A05531F1535C20062C06D /* Factory */,
-				337A05561F1535C20062C06D /* Protocols */,
-			);
-			path = "OperationChainer ";
-			sourceTree = "<group>";
-		};
-		337A05501F1535C20062C06D /* Concrete */ = {
-			isa = PBXGroup;
-			children = (
-				337A05511F1535C20062C06D /* ControlFlowOperationChainer.swift */,
-				337A05521F1535C20062C06D /* DataFlowOperationChainer.swift */,
-			);
-			path = Concrete;
-			sourceTree = "<group>";
-		};
-		337A05531F1535C20062C06D /* Factory */ = {
-			isa = PBXGroup;
-			children = (
-				337A05541F1535C20062C06D /* OperationChainersFactory.swift */,
-				337A05551F1535C20062C06D /* OperationChainersFactoryImplementation.swift */,
-			);
-			path = Factory;
-			sourceTree = "<group>";
-		};
-		337A05561F1535C20062C06D /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				337A05571F1535C20062C06D /* OperationChainer.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		337A05581F1535C20062C06D /* OperationQueue */ = {
-			isa = PBXGroup;
-			children = (
-				337A05591F1535C20062C06D /* OperationQueue.swift */,
-			);
-			path = OperationQueue;
-			sourceTree = "<group>";
-		};
-		337A055A1F1535C20062C06D /* Operations */ = {
-			isa = PBXGroup;
-			children = (
-				337A055B1F1535C20062C06D /* AsyncOperation */,
-				337A055E1F1535C20062C06D /* ChainableOperationBase */,
-				337A05601F1535C20062C06D /* CompoundOperation */,
-			);
-			path = Operations;
-			sourceTree = "<group>";
-		};
-		337A055B1F1535C20062C06D /* AsyncOperation */ = {
-			isa = PBXGroup;
-			children = (
-				337A055C1F1535C20062C06D /* AsyncChainableOperation.swift */,
-				337A055D1F1535C20062C06D /* AsyncOperation.swift */,
-			);
-			path = AsyncOperation;
-			sourceTree = "<group>";
-		};
-		337A055E1F1535C20062C06D /* ChainableOperationBase */ = {
-			isa = PBXGroup;
-			children = (
-				337A055F1F1535C20062C06D /* ChainableOperationBase.swift */,
-			);
-			path = ChainableOperationBase;
-			sourceTree = "<group>";
-		};
-		337A05601F1535C20062C06D /* CompoundOperation */ = {
-			isa = PBXGroup;
-			children = (
-				337A05611F1535C20062C06D /* CompoundOperation.swift */,
-			);
-			path = CompoundOperation;
-			sourceTree = "<group>";
-		};
-		337A05621F1535C20062C06D /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				337A05631F1535C20062C06D /* ChainableOperation */,
-				337A05681F1535C20062C06D /* CompoundOperation */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		337A05631F1535C20062C06D /* ChainableOperation */ = {
-			isa = PBXGroup;
-			children = (
-				337A05641F1535C20062C06D /* ChainableOperation.swift */,
-				337A05651F1535C20062C06D /* ChainableOperationDelegate.swift */,
-				337A05661F1535C20062C06D /* ChainableOperationInput.swift */,
-				337A05671F1535C20062C06D /* ChainableOperationOutput.swift */,
-			);
-			path = ChainableOperation;
-			sourceTree = "<group>";
-		};
-		337A05681F1535C20062C06D /* CompoundOperation */ = {
-			isa = PBXGroup;
-			children = (
-				337A05691F1535C20062C06D /* CompoundOperationQueueInput.swift */,
-				337A056A1F1535C20062C06D /* CompoundOperationQueueOutput.swift */,
-			);
-			path = CompoundOperation;
-			sourceTree = "<group>";
-		};
-		337A056B1F1535C20062C06D /* Scheduler */ = {
-			isa = PBXGroup;
-			children = (
-				337A05891F1544080062C06D /* Protocols */,
-				337A056C1F1535C20062C06D /* Concrete */,
-			);
-			path = Scheduler;
-			sourceTree = "<group>";
-		};
-		337A056C1F1535C20062C06D /* Concrete */ = {
-			isa = PBXGroup;
-			children = (
-				337A056D1F1535C20062C06D /* OperationsSchedulerImplementation.swift */,
-			);
-			path = Concrete;
-			sourceTree = "<group>";
-		};
-		337A05891F1544080062C06D /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				337A058A1F15440C0062C06D /* OperationsScheduler.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		337A05AC1F15497C0062C06D /* Tests */ = {
@@ -452,6 +197,226 @@
 				337A05AE1F15497C0062C06D /* Info.plist */,
 			);
 			path = Supporting;
+			sourceTree = "<group>";
+		};
+		339EA2DE1F1644750041D6E6 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				339EA2DF1F1644750041D6E6 /* Errors */,
+				339EA2E21F1644750041D6E6 /* OperationBuffer */,
+				339EA2EA1F1644750041D6E6 /* OperationChainConfigurator */,
+				339EA2EF1F1644750041D6E6 /* OperationChainer  */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		339EA2DF1F1644750041D6E6 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				339EA2E01F1644750041D6E6 /* SchedulerError */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		339EA2E01F1644750041D6E6 /* SchedulerError */ = {
+			isa = PBXGroup;
+			children = (
+				339EA2E11F1644750041D6E6 /* SchedulerError.swift */,
+			);
+			path = SchedulerError;
+			sourceTree = "<group>";
+		};
+		339EA2E21F1644750041D6E6 /* OperationBuffer */ = {
+			isa = PBXGroup;
+			children = (
+				339EA2E31F1644750041D6E6 /* Concrete */,
+				339EA2E51F1644750041D6E6 /* Factory */,
+				339EA2E81F1644750041D6E6 /* Protocols */,
+			);
+			path = OperationBuffer;
+			sourceTree = "<group>";
+		};
+		339EA2E31F1644750041D6E6 /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				339EA2E41F1644750041D6E6 /* OperationBufferImplementation.swift */,
+			);
+			path = Concrete;
+			sourceTree = "<group>";
+		};
+		339EA2E51F1644750041D6E6 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				339EA2E61F1644750041D6E6 /* OperationBuffersFactory.swift */,
+				339EA2E71F1644750041D6E6 /* OperationBuffersFactoryImplementation.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		339EA2E81F1644750041D6E6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				339EA2E91F1644750041D6E6 /* OperationBuffer.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		339EA2EA1F1644750041D6E6 /* OperationChainConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				339EA2EB1F1644750041D6E6 /* Concrete */,
+				339EA2ED1F1644750041D6E6 /* Protocols */,
+			);
+			path = OperationChainConfigurator;
+			sourceTree = "<group>";
+		};
+		339EA2EB1F1644750041D6E6 /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				339EA2EC1F1644750041D6E6 /* OperationChainConfiguratorImplementation.swift */,
+			);
+			path = Concrete;
+			sourceTree = "<group>";
+		};
+		339EA2ED1F1644750041D6E6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				339EA2EE1F1644750041D6E6 /* OperationChainConfigurator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		339EA2EF1F1644750041D6E6 /* OperationChainer  */ = {
+			isa = PBXGroup;
+			children = (
+				339EA2F01F1644750041D6E6 /* Concrete */,
+				339EA2F31F1644750041D6E6 /* Factory */,
+				339EA2F61F1644750041D6E6 /* Protocols */,
+			);
+			path = "OperationChainer ";
+			sourceTree = "<group>";
+		};
+		339EA2F01F1644750041D6E6 /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				339EA2F11F1644750041D6E6 /* ControlFlowOperationChainer.swift */,
+				339EA2F21F1644750041D6E6 /* DataFlowOperationChainer.swift */,
+			);
+			path = Concrete;
+			sourceTree = "<group>";
+		};
+		339EA2F31F1644750041D6E6 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				339EA2F41F1644750041D6E6 /* OperationChainersFactory.swift */,
+				339EA2F51F1644750041D6E6 /* OperationChainersFactoryImplementation.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		339EA2F61F1644750041D6E6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				339EA2F71F1644750041D6E6 /* OperationChainer.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		339EA2F81F1644750041D6E6 /* OperationQueue */ = {
+			isa = PBXGroup;
+			children = (
+				339EA2F91F1644750041D6E6 /* OperationQueue.swift */,
+			);
+			path = OperationQueue;
+			sourceTree = "<group>";
+		};
+		339EA2FA1F1644750041D6E6 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				339EA2FB1F1644750041D6E6 /* AsyncOperation */,
+				339EA2FE1F1644750041D6E6 /* ChainableOperationBase */,
+				339EA3001F1644750041D6E6 /* CompoundOperation */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		339EA2FB1F1644750041D6E6 /* AsyncOperation */ = {
+			isa = PBXGroup;
+			children = (
+				339EA2FC1F1644750041D6E6 /* AsyncChainableOperation.swift */,
+				339EA2FD1F1644750041D6E6 /* AsyncOperation.swift */,
+			);
+			path = AsyncOperation;
+			sourceTree = "<group>";
+		};
+		339EA2FE1F1644750041D6E6 /* ChainableOperationBase */ = {
+			isa = PBXGroup;
+			children = (
+				339EA2FF1F1644750041D6E6 /* ChainableOperationBase.swift */,
+			);
+			path = ChainableOperationBase;
+			sourceTree = "<group>";
+		};
+		339EA3001F1644750041D6E6 /* CompoundOperation */ = {
+			isa = PBXGroup;
+			children = (
+				339EA3011F1644750041D6E6 /* CompoundOperation.swift */,
+			);
+			path = CompoundOperation;
+			sourceTree = "<group>";
+		};
+		339EA3021F1644750041D6E6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				339EA3031F1644750041D6E6 /* ChainableOperation */,
+				339EA3081F1644750041D6E6 /* CompoundOperation */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		339EA3031F1644750041D6E6 /* ChainableOperation */ = {
+			isa = PBXGroup;
+			children = (
+				339EA3041F1644750041D6E6 /* ChainableOperation.swift */,
+				339EA3051F1644750041D6E6 /* ChainableOperationDelegate.swift */,
+				339EA3061F1644750041D6E6 /* ChainableOperationInput.swift */,
+				339EA3071F1644750041D6E6 /* ChainableOperationOutput.swift */,
+			);
+			path = ChainableOperation;
+			sourceTree = "<group>";
+		};
+		339EA3081F1644750041D6E6 /* CompoundOperation */ = {
+			isa = PBXGroup;
+			children = (
+				339EA3091F1644750041D6E6 /* CompoundOperationQueueInput.swift */,
+				339EA30A1F1644750041D6E6 /* CompoundOperationQueueOutput.swift */,
+			);
+			path = CompoundOperation;
+			sourceTree = "<group>";
+		};
+		339EA30B1F1644750041D6E6 /* Scheduler */ = {
+			isa = PBXGroup;
+			children = (
+				339EA30C1F1644750041D6E6 /* Concrete */,
+				339EA30E1F1644750041D6E6 /* Protocols */,
+			);
+			path = Scheduler;
+			sourceTree = "<group>";
+		};
+		339EA30C1F1644750041D6E6 /* Concrete */ = {
+			isa = PBXGroup;
+			children = (
+				339EA30D1F1644750041D6E6 /* OperationsSchedulerImplementation.swift */,
+			);
+			path = Concrete;
+			sourceTree = "<group>";
+		};
+		339EA30E1F1644750041D6E6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				339EA30F1F1644750041D6E6 /* OperationsScheduler.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -603,7 +568,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				337A05AF1F15497C0062C06D /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -635,32 +599,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				337A05831F1535C20062C06D /* ChainableOperationInput.swift in Sources */,
-				337A05841F1535C20062C06D /* ChainableOperationOutput.swift in Sources */,
-				337A05771F1535C20062C06D /* ControlFlowOperationChainer.swift in Sources */,
-				337A05791F1535C20062C06D /* OperationChainersFactory.swift in Sources */,
-				337A05751F1535C20062C06D /* OperationChainConfiguratorImplementation.swift in Sources */,
-				337A05861F1535C20062C06D /* CompoundOperationQueueOutput.swift in Sources */,
-				337A05801F1535C20062C06D /* CompoundOperation.swift in Sources */,
-				337A057C1F1535C20062C06D /* OperationQueue.swift in Sources */,
-				337A05701F1535C20062C06D /* SchedulerError.swift in Sources */,
-				337A05721F1535C20062C06D /* OperationBuffersFactory.swift in Sources */,
-				337A05781F1535C20062C06D /* DataFlowOperationChainer.swift in Sources */,
-				337A05821F1535C20062C06D /* ChainableOperationDelegate.swift in Sources */,
-				337A057A1F1535C20062C06D /* OperationChainersFactoryImplementation.swift in Sources */,
-				337A057D1F1535C20062C06D /* AsyncChainableOperation.swift in Sources */,
-				337A05731F1535C20062C06D /* OperationBuffersFactoryImplementation.swift in Sources */,
-				337A057F1F1535C20062C06D /* ChainableOperationBase.swift in Sources */,
-				337A058B1F15440C0062C06D /* OperationsScheduler.swift in Sources */,
-				337A05851F1535C20062C06D /* CompoundOperationQueueInput.swift in Sources */,
-				337A057B1F1535C20062C06D /* OperationChainer.swift in Sources */,
-				337A058D1F1544F70062C06D /* Lagoon.swift in Sources */,
-				337A05711F1535C20062C06D /* OperationBufferImplementation.swift in Sources */,
-				337A05871F1535C20062C06D /* OperationsSchedulerImplementation.swift in Sources */,
-				337A05741F1535C20062C06D /* OperationBuffer.swift in Sources */,
-				337A057E1F1535C20062C06D /* AsyncOperation.swift in Sources */,
-				337A05761F1535C20062C06D /* OperationChainConfigurator.swift in Sources */,
-				337A05811F1535C20062C06D /* ChainableOperation.swift in Sources */,
+				339EA3111F1644750041D6E6 /* SchedulerError.swift in Sources */,
+				339EA3101F1644750041D6E6 /* Lagoon.swift in Sources */,
+				339EA3221F1644750041D6E6 /* ChainableOperation.swift in Sources */,
+				339EA3281F1644750041D6E6 /* OperationsSchedulerImplementation.swift in Sources */,
+				339EA3201F1644750041D6E6 /* ChainableOperationBase.swift in Sources */,
+				339EA3161F1644750041D6E6 /* OperationChainConfiguratorImplementation.swift in Sources */,
+				339EA31A1F1644750041D6E6 /* OperationChainersFactory.swift in Sources */,
+				339EA3131F1644750041D6E6 /* OperationBuffersFactory.swift in Sources */,
+				339EA31C1F1644750041D6E6 /* OperationChainer.swift in Sources */,
+				339EA3231F1644750041D6E6 /* ChainableOperationDelegate.swift in Sources */,
+				339EA3261F1644750041D6E6 /* CompoundOperationQueueInput.swift in Sources */,
+				339EA31E1F1644750041D6E6 /* AsyncChainableOperation.swift in Sources */,
+				339EA3171F1644750041D6E6 /* OperationChainConfigurator.swift in Sources */,
+				339EA3241F1644750041D6E6 /* ChainableOperationInput.swift in Sources */,
+				339EA31D1F1644750041D6E6 /* OperationQueue.swift in Sources */,
+				339EA3151F1644750041D6E6 /* OperationBuffer.swift in Sources */,
+				339EA3191F1644750041D6E6 /* DataFlowOperationChainer.swift in Sources */,
+				339EA3291F1644750041D6E6 /* OperationsScheduler.swift in Sources */,
+				339EA3141F1644750041D6E6 /* OperationBuffersFactoryImplementation.swift in Sources */,
+				339EA3251F1644750041D6E6 /* ChainableOperationOutput.swift in Sources */,
+				339EA3121F1644750041D6E6 /* OperationBufferImplementation.swift in Sources */,
+				339EA3181F1644750041D6E6 /* ControlFlowOperationChainer.swift in Sources */,
+				339EA31F1F1644750041D6E6 /* AsyncOperation.swift in Sources */,
+				339EA3271F1644750041D6E6 /* CompoundOperationQueueOutput.swift in Sources */,
+				339EA3211F1644750041D6E6 /* CompoundOperation.swift in Sources */,
+				339EA31B1F1644750041D6E6 /* OperationChainersFactoryImplementation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,32 +632,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				339EA2D61F1642C00041D6E6 /* ChainableOperationInput.swift in Sources */,
-				339EA2D71F1642C00041D6E6 /* ChainableOperationOutput.swift in Sources */,
-				339EA2CA1F1642C00041D6E6 /* ControlFlowOperationChainer.swift in Sources */,
-				339EA2DB1F1642C00041D6E6 /* OperationsSchedulerImplementation.swift in Sources */,
-				339EA2CC1F1642C00041D6E6 /* OperationChainersFactory.swift in Sources */,
-				339EA2C81F1642C00041D6E6 /* OperationChainConfiguratorImplementation.swift in Sources */,
-				339EA2D91F1642C00041D6E6 /* CompoundOperationQueueOutput.swift in Sources */,
-				339EA2D31F1642C00041D6E6 /* CompoundOperation.swift in Sources */,
-				339EA2DA1F1642C00041D6E6 /* OperationsScheduler.swift in Sources */,
-				339EA2CF1F1642C00041D6E6 /* OperationQueue.swift in Sources */,
-				339EA2C31F1642C00041D6E6 /* SchedulerError.swift in Sources */,
-				339EA2C51F1642C00041D6E6 /* OperationBuffersFactory.swift in Sources */,
-				339EA2CB1F1642C00041D6E6 /* DataFlowOperationChainer.swift in Sources */,
-				339EA2D51F1642C00041D6E6 /* ChainableOperationDelegate.swift in Sources */,
-				339EA2CD1F1642C00041D6E6 /* OperationChainersFactoryImplementation.swift in Sources */,
-				339EA2D01F1642C00041D6E6 /* AsyncChainableOperation.swift in Sources */,
-				339EA2C61F1642C00041D6E6 /* OperationBuffersFactoryImplementation.swift in Sources */,
-				339EA2D21F1642C00041D6E6 /* ChainableOperationBase.swift in Sources */,
-				339EA2D81F1642C00041D6E6 /* CompoundOperationQueueInput.swift in Sources */,
-				339EA2DC1F1642C00041D6E6 /* Lagoon.swift in Sources */,
-				339EA2CE1F1642C00041D6E6 /* OperationChainer.swift in Sources */,
-				339EA2C41F1642C00041D6E6 /* OperationBufferImplementation.swift in Sources */,
-				339EA2C71F1642C00041D6E6 /* OperationBuffer.swift in Sources */,
-				339EA2D11F1642C00041D6E6 /* AsyncOperation.swift in Sources */,
-				339EA2C91F1642C00041D6E6 /* OperationChainConfigurator.swift in Sources */,
-				339EA2D41F1642C00041D6E6 /* ChainableOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -993,6 +931,7 @@
 		337A059B1F1548F60062C06D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1048,6 +987,7 @@
 		337A059C1F1548F60062C06D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1096,7 +1036,6 @@
 		337A05AA1F1549070062C06D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1153,7 +1092,6 @@
 		337A05AB1F1549070062C06D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;

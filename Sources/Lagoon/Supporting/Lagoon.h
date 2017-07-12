@@ -1,6 +1,6 @@
 //
-//  Lagoon iOS.h
-//  Lagoon iOS
+//  Lagoon.h
+//  Lagoon
 //
 //  Created by incetro on 11/07/2017.
 //
