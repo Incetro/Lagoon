@@ -27,7 +27,7 @@ Lagoon is a framework written in Swift that makes it easy for you to organize yo
 ## Usage
 ### Look at the simple example
 Here we convert our string to number, increment and decrement it, multiply and divide by digits.
-Let's create our operations:
+Let's create example operations:
 ```swift
 
 /// Convert String to Int
@@ -274,7 +274,7 @@ If you prefer not to use any dependency managers, you can integrate Lagoon into 
   
 ## Author
 
-incetro, incetro@ya.ru
+incetro, incetro@ya.ru. Inspired by [COOperation](https://github.com/strongself/COOperation)
 
 ## License
 
