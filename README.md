@@ -274,7 +274,7 @@ If you prefer not to use any dependency managers, you can integrate Lagoon into 
   
 ## Author
 
-incetro, incetro@ya.ru
+incetro, incetro@ya.ru. Inspired by [COOperation](https://github.com/strongself/COOperation)
 
 ## License
 
