@@ -38,6 +38,34 @@
 		337A05971F1548F60062C06D /* Lagoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337A04F81F150D5F0062C06D /* Lagoon.framework */; };
 		337A05A61F1549070062C06D /* Lagoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337A05061F150D7C0062C06D /* Lagoon.framework */; };
 		337A05AF1F15497C0062C06D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 337A05AE1F15497C0062C06D /* Info.plist */; };
+		339EA2C11F1642A40041D6E6 /* LagoonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA2C01F1642A40041D6E6 /* LagoonTests.swift */; };
+		339EA2C21F1642A40041D6E6 /* LagoonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA2C01F1642A40041D6E6 /* LagoonTests.swift */; };
+		339EA2C31F1642C00041D6E6 /* SchedulerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05411F1535C20062C06D /* SchedulerError.swift */; };
+		339EA2C41F1642C00041D6E6 /* OperationBufferImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05441F1535C20062C06D /* OperationBufferImplementation.swift */; };
+		339EA2C51F1642C00041D6E6 /* OperationBuffersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05461F1535C20062C06D /* OperationBuffersFactory.swift */; };
+		339EA2C61F1642C00041D6E6 /* OperationBuffersFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05471F1535C20062C06D /* OperationBuffersFactoryImplementation.swift */; };
+		339EA2C71F1642C00041D6E6 /* OperationBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05491F1535C20062C06D /* OperationBuffer.swift */; };
+		339EA2C81F1642C00041D6E6 /* OperationChainConfiguratorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A054C1F1535C20062C06D /* OperationChainConfiguratorImplementation.swift */; };
+		339EA2C91F1642C00041D6E6 /* OperationChainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A054E1F1535C20062C06D /* OperationChainConfigurator.swift */; };
+		339EA2CA1F1642C00041D6E6 /* ControlFlowOperationChainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05511F1535C20062C06D /* ControlFlowOperationChainer.swift */; };
+		339EA2CB1F1642C00041D6E6 /* DataFlowOperationChainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05521F1535C20062C06D /* DataFlowOperationChainer.swift */; };
+		339EA2CC1F1642C00041D6E6 /* OperationChainersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05541F1535C20062C06D /* OperationChainersFactory.swift */; };
+		339EA2CD1F1642C00041D6E6 /* OperationChainersFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05551F1535C20062C06D /* OperationChainersFactoryImplementation.swift */; };
+		339EA2CE1F1642C00041D6E6 /* OperationChainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05571F1535C20062C06D /* OperationChainer.swift */; };
+		339EA2CF1F1642C00041D6E6 /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05591F1535C20062C06D /* OperationQueue.swift */; };
+		339EA2D01F1642C00041D6E6 /* AsyncChainableOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A055C1F1535C20062C06D /* AsyncChainableOperation.swift */; };
+		339EA2D11F1642C00041D6E6 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A055D1F1535C20062C06D /* AsyncOperation.swift */; };
+		339EA2D21F1642C00041D6E6 /* ChainableOperationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A055F1F1535C20062C06D /* ChainableOperationBase.swift */; };
+		339EA2D31F1642C00041D6E6 /* CompoundOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05611F1535C20062C06D /* CompoundOperation.swift */; };
+		339EA2D41F1642C00041D6E6 /* ChainableOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05641F1535C20062C06D /* ChainableOperation.swift */; };
+		339EA2D51F1642C00041D6E6 /* ChainableOperationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05651F1535C20062C06D /* ChainableOperationDelegate.swift */; };
+		339EA2D61F1642C00041D6E6 /* ChainableOperationInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05661F1535C20062C06D /* ChainableOperationInput.swift */; };
+		339EA2D71F1642C00041D6E6 /* ChainableOperationOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05671F1535C20062C06D /* ChainableOperationOutput.swift */; };
+		339EA2D81F1642C00041D6E6 /* CompoundOperationQueueInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A05691F1535C20062C06D /* CompoundOperationQueueInput.swift */; };
+		339EA2D91F1642C00041D6E6 /* CompoundOperationQueueOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A056A1F1535C20062C06D /* CompoundOperationQueueOutput.swift */; };
+		339EA2DA1F1642C00041D6E6 /* OperationsScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A058A1F15440C0062C06D /* OperationsScheduler.swift */; };
+		339EA2DB1F1642C00041D6E6 /* OperationsSchedulerImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A056D1F1535C20062C06D /* OperationsSchedulerImplementation.swift */; };
+		339EA2DC1F1642C00041D6E6 /* Lagoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337A058C1F1544F70062C06D /* Lagoon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +120,7 @@
 		337A05A11F1549070062C06D /* Lagoon macOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lagoon macOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		337A05AE1F15497C0062C06D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		339EA2BE1F163ED40041D6E6 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		339EA2C01F1642A40041D6E6 /* LagoonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LagoonTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -412,6 +441,7 @@
 			isa = PBXGroup;
 			children = (
 				337A05AD1F15497C0062C06D /* Supporting */,
+				339EA2C01F1642A40041D6E6 /* LagoonTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -538,10 +568,12 @@
 					};
 					337A05911F1548F60062C06D = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					337A05A01F1549070062C06D = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -636,6 +668,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				339EA2D61F1642C00041D6E6 /* ChainableOperationInput.swift in Sources */,
+				339EA2D71F1642C00041D6E6 /* ChainableOperationOutput.swift in Sources */,
+				339EA2CA1F1642C00041D6E6 /* ControlFlowOperationChainer.swift in Sources */,
+				339EA2DB1F1642C00041D6E6 /* OperationsSchedulerImplementation.swift in Sources */,
+				339EA2CC1F1642C00041D6E6 /* OperationChainersFactory.swift in Sources */,
+				339EA2C81F1642C00041D6E6 /* OperationChainConfiguratorImplementation.swift in Sources */,
+				339EA2D91F1642C00041D6E6 /* CompoundOperationQueueOutput.swift in Sources */,
+				339EA2D31F1642C00041D6E6 /* CompoundOperation.swift in Sources */,
+				339EA2DA1F1642C00041D6E6 /* OperationsScheduler.swift in Sources */,
+				339EA2CF1F1642C00041D6E6 /* OperationQueue.swift in Sources */,
+				339EA2C31F1642C00041D6E6 /* SchedulerError.swift in Sources */,
+				339EA2C51F1642C00041D6E6 /* OperationBuffersFactory.swift in Sources */,
+				339EA2CB1F1642C00041D6E6 /* DataFlowOperationChainer.swift in Sources */,
+				339EA2D51F1642C00041D6E6 /* ChainableOperationDelegate.swift in Sources */,
+				339EA2CD1F1642C00041D6E6 /* OperationChainersFactoryImplementation.swift in Sources */,
+				339EA2D01F1642C00041D6E6 /* AsyncChainableOperation.swift in Sources */,
+				339EA2C61F1642C00041D6E6 /* OperationBuffersFactoryImplementation.swift in Sources */,
+				339EA2D21F1642C00041D6E6 /* ChainableOperationBase.swift in Sources */,
+				339EA2D81F1642C00041D6E6 /* CompoundOperationQueueInput.swift in Sources */,
+				339EA2DC1F1642C00041D6E6 /* Lagoon.swift in Sources */,
+				339EA2CE1F1642C00041D6E6 /* OperationChainer.swift in Sources */,
+				339EA2C41F1642C00041D6E6 /* OperationBufferImplementation.swift in Sources */,
+				339EA2C71F1642C00041D6E6 /* OperationBuffer.swift in Sources */,
+				339EA2D11F1642C00041D6E6 /* AsyncOperation.swift in Sources */,
+				339EA2C91F1642C00041D6E6 /* OperationChainConfigurator.swift in Sources */,
+				339EA2D41F1642C00041D6E6 /* ChainableOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +701,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				339EA2C11F1642A40041D6E6 /* LagoonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,6 +709,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				339EA2C21F1642A40041D6E6 /* LagoonTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1036,6 +1096,7 @@
 		337A05AA1F1549070062C06D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -1092,6 +1153,7 @@
 		337A05AB1F1549070062C06D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
