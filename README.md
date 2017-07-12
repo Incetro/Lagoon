@@ -33,7 +33,7 @@ Let's create example operations:
 /// Convert String to Int
 class ConvertOperation: ChainableOperationBase<String, Int> {
     
-    override func process(inputData: String, success: @escaping (Int) -> (), failure: @escaping (Error) -> ()) {
+    override func process(inputData: String, success: (Int) -> (), failure: (Error) -> ()) {
         
         if let result = Int(inputData) {
             success(result)
@@ -46,7 +46,7 @@ class ConvertOperation: ChainableOperationBase<String, Int> {
 /// Increment the given number
 class IncrementOperation: ChainableOperationBase<Int, Int> {
     
-    override func process(inputData: Int, success: @escaping (Int) -> (), failure: @escaping (Error) -> ()) {
+    override func process(inputData: Int, success: (Int) -> (), failure: (Error) -> ()) {
         success(inputData + 1)
     }
 }
@@ -54,7 +54,7 @@ class IncrementOperation: ChainableOperationBase<Int, Int> {
 /// Decrement the given number
 class DecrementOperation: ChainableOperationBase<Int, Int> {
     
-    override func process(inputData: Int, success: @escaping (Int) -> (), failure: @escaping (Error) -> ()) {
+    override func process(inputData: Int, success: (Int) -> (), failure: (Error) -> ()) {
         success(inputData - 1)
     }
 }
@@ -68,7 +68,7 @@ class MultiplicationOperation: ChainableOperationBase<Int, Int> {
         self.mult = mult
     }
     
-    override func process(inputData: Int, success: @escaping (Int) -> (), failure: @escaping (Error) -> ()) {
+    override func process(inputData: Int, success: (Int) -> (), failure: (Error) -> ()) {
         success(inputData * self.mult)
     }
 }
@@ -76,7 +76,7 @@ class MultiplicationOperation: ChainableOperationBase<Int, Int> {
 /// Make array of digits from the given number
 class ArrayOperation: ChainableOperationBase<Int, [Int]> {
     
-    override func process(inputData: Int, success: @escaping ([Int]) -> (), failure: @escaping (Error) -> ()) {
+    override func process(inputData: Int, success: ([Int]) -> (), failure: (Error) -> ()) {
         
         var result: [Int] = []
         var number = inputData
@@ -136,7 +136,7 @@ class RequestDataSigningOperation: ChainableOperationBase<RequestDataModel, Requ
         self.requestSigner = requestSigner
     }
     
-    override func process(inputData: RequestDataModel, success: @escaping (RequestDataModel) -> (), failure: @escaping (Error) -> ()) {
+    override func process(inputData: RequestDataModel, success: (RequestDataModel) -> (), failure: (Error) -> ()) {
         
         let signedRequestDataModel = requestSigner.signRequestDataModel(inputData)
         
@@ -165,7 +165,7 @@ class RequestConfigurationOperation: ChainableOperationBase<RequestDataModel, UR
     
     // MARK: - ChainableOperationBase
     
-    override func process(inputData: RequestDataModel, success: @escaping (URLRequest) -> (), failure: @escaping (Error) -> ()) {
+    override func process(inputData: RequestDataModel, success: (URLRequest) -> (), failure: (Error) -> ()) {
         
         let request = requestConfigurator.createRequest(withMethod:       self.method,
                                                         type:             self.queryType,
