@@ -11,7 +11,7 @@ import Lagoon
 
 class ConvertOperation: ChainableOperationBase<String, Int> {
     
-    override func process(inputData: String, success: (Int) -> (), failure: (Error) -> ()) {
+    override func process(inputData: String, success: @escaping (Int) -> (), failure: @escaping (Error) -> ()) {
         
         if let result = Int(inputData) {
             
@@ -26,7 +26,7 @@ class ConvertOperation: ChainableOperationBase<String, Int> {
 
 class IncrementOperation: ChainableOperationBase<Int, Int> {
     
-    override func process(inputData: Int, success: (Int) -> (), failure: (Error) -> ()) {
+    override func process(inputData: Int, success: @escaping (Int) -> (), failure: @escaping (Error) -> ()) {
         
         success(inputData + 1)
     }
@@ -34,7 +34,7 @@ class IncrementOperation: ChainableOperationBase<Int, Int> {
 
 class DecrementOperation: ChainableOperationBase<Int, Int> {
     
-    override func process(inputData: Int, success: (Int) -> (), failure: (Error) -> ()) {
+    override func process(inputData: Int, success: @escaping (Int) -> (), failure: @escaping (Error) -> ()) {
         
         success(inputData - 1)
     }
@@ -49,7 +49,7 @@ class MultiplicationOperation: ChainableOperationBase<Int, Int> {
         self.mult = mult
     }
     
-    override func process(inputData: Int, success: (Int) -> (), failure: (Error) -> ()) {
+    override func process(inputData: Int, success: @escaping (Int) -> (), failure: @escaping (Error) -> ()) {
         
         success(inputData * self.mult)
     }
@@ -57,7 +57,7 @@ class MultiplicationOperation: ChainableOperationBase<Int, Int> {
 
 class ArrayOperation: ChainableOperationBase<Int, [Int]> {
     
-    override func process(inputData: Int, success: ([Int]) -> (), failure: (Error) -> ()) {
+    override func process(inputData: Int, success: @escaping ([Int]) -> (), failure: @escaping (Error) -> ()) {
         
         var result: [Int] = []
         var number = inputData
