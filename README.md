@@ -196,6 +196,8 @@ let compoundOperation = CompoundOperation.default(withOutputDataType: User.self)
 compoundOperation.maxConcurrentOperationCount = 1
         
 compoundOperation.configure(withChainableOperations: operations, inputData: inputData, success: success, failure: failure)
+
+Lagoon.add(operation: compoundOperation)
 ```
 ## Requirements
 - iOS 8.0+ / macOS 10.9+
