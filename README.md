@@ -1,5 +1,4 @@
-Lagoon
-==========
+![Placeholder](https://user-images.githubusercontent.com/13930558/28310017-c3f8c296-6bb3-11e7-9572-83f99515149e.png)
 
 [![Build Status](https://travis-ci.org/incetro/Lagoon.svg?branch=master)](https://travis-ci.org/incetro/Lagoon)
 [![CocoaPods](https://img.shields.io/cocoapods/v/Lagoon.svg)](https://img.shields.io/cocoapods/v/Lagoon.svg)
@@ -196,6 +195,8 @@ let compoundOperation = CompoundOperation.default(withOutputDataType: User.self)
 compoundOperation.maxConcurrentOperationCount = 1
         
 compoundOperation.configure(withChainableOperations: operations, inputData: inputData, success: success, failure: failure)
+
+Lagoon.add(operation: compoundOperation)
 ```
 ## Requirements
 - iOS 8.0+ / macOS 10.9+
