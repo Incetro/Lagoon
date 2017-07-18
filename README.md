@@ -1,5 +1,4 @@
-Lagoon
-==========
+![Placeholder](https://user-images.githubusercontent.com/13930558/28309494-34957c30-6bb2-11e7-974d-bd2813c3c6e0.png)
 
 [![Build Status](https://travis-ci.org/incetro/Lagoon.svg?branch=master)](https://travis-ci.org/incetro/Lagoon)
 [![CocoaPods](https://img.shields.io/cocoapods/v/Lagoon.svg)](https://img.shields.io/cocoapods/v/Lagoon.svg)
