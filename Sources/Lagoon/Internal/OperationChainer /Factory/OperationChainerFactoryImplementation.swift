@@ -1,5 +1,5 @@
 //
-//  OperationChainersFactoryImplementation.swift
+//  OperationChainerFactoryImplementation.swift
 //  Lagoon
 //
 //  Created by incetro on 18/01/17.
@@ -10,22 +10,20 @@ import Foundation
 
 // MARK: - OperationChainerFactory
 
-internal class OperationChainersFactoryImplementation {
+internal class OperationChainerFactoryImplementation {
     
     
 }
 
 // MARK: - OperationChainerFactory
 
-extension OperationChainersFactoryImplementation: OperationChainersFactory {
+extension OperationChainerFactoryImplementation: OperationChainerFactory {
     
     internal func createControlFlowOperationChainer() -> ControlFlowOperationChainer {
-        
         return ControlFlowOperationChainer.controlFlowOperationChainer()
     }
     
     internal func createDataFlowOperationChainer() -> DataFlowOperationChainer {
-        
         return DataFlowOperationChainer.defaultDataFlowOperationChainer()
     }
 }

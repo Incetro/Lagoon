@@ -15,11 +15,9 @@ internal class OperationChainConfiguratorImplementation {
     // MARK: - Properties
     
     /// Buffers' factory
-    
-    fileprivate var bufferFactory: OperationBuffersFactory
-    
+    fileprivate var bufferFactory: OperationBufferFactory
+
     /// Chainer for the input operations
-    
     fileprivate var chainer: OperationChainer
     
     // MARK: - Initializers
@@ -29,8 +27,7 @@ internal class OperationChainConfiguratorImplementation {
     /// - Parameters:
     ///   - chainer: Chainer for the input operations
     ///   - bufferFactory: Buffers' factory
-    
-    internal init(withOperationChainer chainer: OperationChainer, andOperationBuffersFactory bufferFactory: OperationBuffersFactory) {
+    internal init(chainer: OperationChainer, bufferFactory: OperationBufferFactory) {
         
         self.chainer = chainer
         self.bufferFactory = bufferFactory
@@ -39,14 +36,13 @@ internal class OperationChainConfiguratorImplementation {
     /// Standard internal initializer
     ///
     /// - Returns: self instance
-    
     internal static func defaultOperationChainConfigurator() -> OperationChainConfiguratorImplementation {
         
-        let defaultBufferFactory     = OperationBuffersFactoryImplementation()
-        let operationChainersFactory = OperationChainersFactoryImplementation()
-        let defaultChainer           = operationChainersFactory.createDataFlowOperationChainer()
+        let defaultBufferFactory    = OperationBufferFactoryImplementation()
+        let operationChainerFactory = OperationChainerFactoryImplementation()
+        let defaultChainer          = operationChainerFactory.createDataFlowOperationChainer()
         
-        return OperationChainConfiguratorImplementation(withOperationChainer: defaultChainer, andOperationBuffersFactory: defaultBufferFactory)
+        return OperationChainConfiguratorImplementation(chainer: defaultChainer, bufferFactory: defaultBufferFactory)
     }
     
     // MARK: - Internal
@@ -56,27 +52,19 @@ internal class OperationChainConfiguratorImplementation {
     /// - Parameters:
     ///   - data: Input data
     ///   - firstOperation: first operation in the chain
-    
     internal func configureInput<T: AsyncChainableOperation>(withData data: Any, forFirstOperation firstOperation: inout T) {
-        
         let inputBuffer = bufferFactory.createChainableOperationsBuffer()
-        
         inputBuffer.setOperationQueueInputData(data)
-        
         firstOperation.input = inputBuffer
     }
     
     /// Setup the all operations except first and last
     ///
     /// - Parameter operations: all operations
-    
     internal func configureChain<T: AsyncChainableOperation>(withOperations operations: [T]) {
-        
         for i in 0..<operations.count - 1 {
-            
             var currentOperation = operations[i]
             var nextOperation = operations[i + 1]
-            
             chainer.chainOperation(&currentOperation, withOperation: &nextOperation)
         }
     }
@@ -85,13 +73,9 @@ internal class OperationChainConfiguratorImplementation {
      ///
      /// - Parameter lastOperation: last operation in the chain
      /// - Returns: Output buffer
-    
     internal func configureOutput<T: AsyncChainableOperation>(forLastOperation lastOperation: inout T) -> OperationBuffer {
-        
         let outputBuffer = bufferFactory.createChainableOperationsBuffer()
-        
         lastOperation.output = outputBuffer
-        
         return outputBuffer
     }
 }
@@ -103,27 +87,26 @@ extension OperationChainConfiguratorImplementation: OperationChainConfigurator {
     public func configureOperationsChain<T: AsyncChainableOperation>(_ chainableOperations: [T], withInputData inputData: Any) -> OperationBuffer {
         
         guard var firstOperation = chainableOperations.first, var lastOperation = chainableOperations.last else {
-            
             fatalError("Array size must be not empty")
         }
         
         configureInput(withData: inputData, forFirstOperation: &firstOperation)
-        
         configureChain(withOperations: chainableOperations)
         
-        let outputBuffer = configureOutput(forLastOperation: &lastOperation)
-        
-        return outputBuffer
+        return configureOutput(forLastOperation: &lastOperation)
     }
     
     public func copy(with zone: NSZone? = nil) -> Any {
         
-        guard let bufferFactory = self.bufferFactory.copy(with: nil) as? OperationBuffersFactory, let chainer = self.chainer.copy(with: nil) as? OperationChainer else {
-            
+        guard let bufferFactory = bufferFactory.copy(with: nil) as? OperationBufferFactory else {
+            fatalError()
+        }
+
+        guard let chainer = chainer.copy(with: nil) as? OperationChainer else {
             fatalError()
         }
         
-        let copy = OperationChainConfiguratorImplementation(withOperationChainer: chainer, andOperationBuffersFactory: bufferFactory)
+        let copy = OperationChainConfiguratorImplementation(chainer: chainer, bufferFactory: bufferFactory)
         
         return copy
     }

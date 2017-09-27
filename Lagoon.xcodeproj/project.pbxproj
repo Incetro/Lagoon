@@ -12,15 +12,15 @@
 		339EA3881F16531F0041D6E6 /* Lagoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3551F16531F0041D6E6 /* Lagoon.swift */; };
 		339EA3891F16531F0041D6E6 /* SchedulerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3591F16531F0041D6E6 /* SchedulerError.swift */; };
 		339EA38A1F16531F0041D6E6 /* OperationBufferImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA35C1F16531F0041D6E6 /* OperationBufferImplementation.swift */; };
-		339EA38B1F16531F0041D6E6 /* OperationBuffersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA35E1F16531F0041D6E6 /* OperationBuffersFactory.swift */; };
-		339EA38C1F16531F0041D6E6 /* OperationBuffersFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA35F1F16531F0041D6E6 /* OperationBuffersFactoryImplementation.swift */; };
+		339EA38B1F16531F0041D6E6 /* OperationBufferFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA35E1F16531F0041D6E6 /* OperationBufferFactory.swift */; };
+		339EA38C1F16531F0041D6E6 /* OperationBufferFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA35F1F16531F0041D6E6 /* OperationBufferFactoryImplementation.swift */; };
 		339EA38D1F16531F0041D6E6 /* OperationBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3611F16531F0041D6E6 /* OperationBuffer.swift */; };
 		339EA38E1F16531F0041D6E6 /* OperationChainConfiguratorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3641F16531F0041D6E6 /* OperationChainConfiguratorImplementation.swift */; };
 		339EA38F1F16531F0041D6E6 /* OperationChainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3661F16531F0041D6E6 /* OperationChainConfigurator.swift */; };
 		339EA3901F16531F0041D6E6 /* ControlFlowOperationChainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3691F16531F0041D6E6 /* ControlFlowOperationChainer.swift */; };
 		339EA3911F16531F0041D6E6 /* DataFlowOperationChainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA36A1F16531F0041D6E6 /* DataFlowOperationChainer.swift */; };
-		339EA3921F16531F0041D6E6 /* OperationChainersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA36C1F16531F0041D6E6 /* OperationChainersFactory.swift */; };
-		339EA3931F16531F0041D6E6 /* OperationChainersFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA36D1F16531F0041D6E6 /* OperationChainersFactoryImplementation.swift */; };
+		339EA3921F16531F0041D6E6 /* OperationChainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA36C1F16531F0041D6E6 /* OperationChainerFactory.swift */; };
+		339EA3931F16531F0041D6E6 /* OperationChainerFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA36D1F16531F0041D6E6 /* OperationChainerFactoryImplementation.swift */; };
 		339EA3941F16531F0041D6E6 /* OperationChainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA36F1F16531F0041D6E6 /* OperationChainer.swift */; };
 		339EA3951F16531F0041D6E6 /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3711F16531F0041D6E6 /* OperationQueue.swift */; };
 		339EA3961F16531F0041D6E6 /* AsyncChainableOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3741F16531F0041D6E6 /* AsyncChainableOperation.swift */; };
@@ -50,14 +50,14 @@
 		339EA3AE1F1653350041D6E6 /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3711F16531F0041D6E6 /* OperationQueue.swift */; };
 		339EA3AF1F16533F0041D6E6 /* ControlFlowOperationChainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3691F16531F0041D6E6 /* ControlFlowOperationChainer.swift */; };
 		339EA3B01F16533F0041D6E6 /* DataFlowOperationChainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA36A1F16531F0041D6E6 /* DataFlowOperationChainer.swift */; };
-		339EA3B11F16533F0041D6E6 /* OperationChainersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA36C1F16531F0041D6E6 /* OperationChainersFactory.swift */; };
-		339EA3B21F16533F0041D6E6 /* OperationChainersFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA36D1F16531F0041D6E6 /* OperationChainersFactoryImplementation.swift */; };
+		339EA3B11F16533F0041D6E6 /* OperationChainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA36C1F16531F0041D6E6 /* OperationChainerFactory.swift */; };
+		339EA3B21F16533F0041D6E6 /* OperationChainerFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA36D1F16531F0041D6E6 /* OperationChainerFactoryImplementation.swift */; };
 		339EA3B31F16533F0041D6E6 /* OperationChainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA36F1F16531F0041D6E6 /* OperationChainer.swift */; };
 		339EA3B41F1653440041D6E6 /* OperationChainConfiguratorImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3641F16531F0041D6E6 /* OperationChainConfiguratorImplementation.swift */; };
 		339EA3B51F1653440041D6E6 /* OperationChainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3661F16531F0041D6E6 /* OperationChainConfigurator.swift */; };
 		339EA3B61F16534C0041D6E6 /* OperationBufferImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA35C1F16531F0041D6E6 /* OperationBufferImplementation.swift */; };
-		339EA3B71F16534C0041D6E6 /* OperationBuffersFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA35E1F16531F0041D6E6 /* OperationBuffersFactory.swift */; };
-		339EA3B81F16534C0041D6E6 /* OperationBuffersFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA35F1F16531F0041D6E6 /* OperationBuffersFactoryImplementation.swift */; };
+		339EA3B71F16534C0041D6E6 /* OperationBufferFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA35E1F16531F0041D6E6 /* OperationBufferFactory.swift */; };
+		339EA3B81F16534C0041D6E6 /* OperationBufferFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA35F1F16531F0041D6E6 /* OperationBufferFactoryImplementation.swift */; };
 		339EA3B91F16534C0041D6E6 /* OperationBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3611F16531F0041D6E6 /* OperationBuffer.swift */; };
 		339EA3BA1F1653510041D6E6 /* SchedulerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3591F16531F0041D6E6 /* SchedulerError.swift */; };
 		339EA3BB1F1653550041D6E6 /* Lagoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3551F16531F0041D6E6 /* Lagoon.swift */; };
@@ -92,15 +92,15 @@
 		339EA3551F16531F0041D6E6 /* Lagoon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lagoon.swift; sourceTree = "<group>"; };
 		339EA3591F16531F0041D6E6 /* SchedulerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchedulerError.swift; sourceTree = "<group>"; };
 		339EA35C1F16531F0041D6E6 /* OperationBufferImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationBufferImplementation.swift; sourceTree = "<group>"; };
-		339EA35E1F16531F0041D6E6 /* OperationBuffersFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationBuffersFactory.swift; sourceTree = "<group>"; };
-		339EA35F1F16531F0041D6E6 /* OperationBuffersFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationBuffersFactoryImplementation.swift; sourceTree = "<group>"; };
+		339EA35E1F16531F0041D6E6 /* OperationBufferFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationBufferFactory.swift; sourceTree = "<group>"; };
+		339EA35F1F16531F0041D6E6 /* OperationBufferFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationBufferFactoryImplementation.swift; sourceTree = "<group>"; };
 		339EA3611F16531F0041D6E6 /* OperationBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationBuffer.swift; sourceTree = "<group>"; };
 		339EA3641F16531F0041D6E6 /* OperationChainConfiguratorImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainConfiguratorImplementation.swift; sourceTree = "<group>"; };
 		339EA3661F16531F0041D6E6 /* OperationChainConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainConfigurator.swift; sourceTree = "<group>"; };
 		339EA3691F16531F0041D6E6 /* ControlFlowOperationChainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlFlowOperationChainer.swift; sourceTree = "<group>"; };
 		339EA36A1F16531F0041D6E6 /* DataFlowOperationChainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataFlowOperationChainer.swift; sourceTree = "<group>"; };
-		339EA36C1F16531F0041D6E6 /* OperationChainersFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainersFactory.swift; sourceTree = "<group>"; };
-		339EA36D1F16531F0041D6E6 /* OperationChainersFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainersFactoryImplementation.swift; sourceTree = "<group>"; };
+		339EA36C1F16531F0041D6E6 /* OperationChainerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainerFactory.swift; sourceTree = "<group>"; };
+		339EA36D1F16531F0041D6E6 /* OperationChainerFactoryImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainerFactoryImplementation.swift; sourceTree = "<group>"; };
 		339EA36F1F16531F0041D6E6 /* OperationChainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationChainer.swift; sourceTree = "<group>"; };
 		339EA3711F16531F0041D6E6 /* OperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationQueue.swift; sourceTree = "<group>"; };
 		339EA3741F16531F0041D6E6 /* AsyncChainableOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncChainableOperation.swift; sourceTree = "<group>"; };
@@ -263,8 +263,8 @@
 		339EA35D1F16531F0041D6E6 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				339EA35E1F16531F0041D6E6 /* OperationBuffersFactory.swift */,
-				339EA35F1F16531F0041D6E6 /* OperationBuffersFactoryImplementation.swift */,
+				339EA35E1F16531F0041D6E6 /* OperationBufferFactory.swift */,
+				339EA35F1F16531F0041D6E6 /* OperationBufferFactoryImplementation.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -324,8 +324,8 @@
 		339EA36B1F16531F0041D6E6 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				339EA36C1F16531F0041D6E6 /* OperationChainersFactory.swift */,
-				339EA36D1F16531F0041D6E6 /* OperationChainersFactoryImplementation.swift */,
+				339EA36C1F16531F0041D6E6 /* OperationChainerFactory.swift */,
+				339EA36D1F16531F0041D6E6 /* OperationChainerFactoryImplementation.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -627,8 +627,8 @@
 				339EA3A01F16531F0041D6E6 /* OperationsSchedulerImplementation.swift in Sources */,
 				339EA3981F16531F0041D6E6 /* ChainableOperationBase.swift in Sources */,
 				339EA38E1F16531F0041D6E6 /* OperationChainConfiguratorImplementation.swift in Sources */,
-				339EA3921F16531F0041D6E6 /* OperationChainersFactory.swift in Sources */,
-				339EA38B1F16531F0041D6E6 /* OperationBuffersFactory.swift in Sources */,
+				339EA3921F16531F0041D6E6 /* OperationChainerFactory.swift in Sources */,
+				339EA38B1F16531F0041D6E6 /* OperationBufferFactory.swift in Sources */,
 				339EA3941F16531F0041D6E6 /* OperationChainer.swift in Sources */,
 				339EA39B1F16531F0041D6E6 /* ChainableOperationDelegate.swift in Sources */,
 				339EA39E1F16531F0041D6E6 /* CompoundOperationQueueInput.swift in Sources */,
@@ -639,14 +639,14 @@
 				339EA38D1F16531F0041D6E6 /* OperationBuffer.swift in Sources */,
 				339EA3911F16531F0041D6E6 /* DataFlowOperationChainer.swift in Sources */,
 				339EA3A11F16531F0041D6E6 /* OperationsScheduler.swift in Sources */,
-				339EA38C1F16531F0041D6E6 /* OperationBuffersFactoryImplementation.swift in Sources */,
+				339EA38C1F16531F0041D6E6 /* OperationBufferFactoryImplementation.swift in Sources */,
 				339EA39D1F16531F0041D6E6 /* ChainableOperationOutput.swift in Sources */,
 				339EA38A1F16531F0041D6E6 /* OperationBufferImplementation.swift in Sources */,
 				339EA3901F16531F0041D6E6 /* ControlFlowOperationChainer.swift in Sources */,
 				339EA3971F16531F0041D6E6 /* AsyncOperation.swift in Sources */,
 				339EA39F1F16531F0041D6E6 /* CompoundOperationQueueOutput.swift in Sources */,
 				339EA3991F16531F0041D6E6 /* CompoundOperation.swift in Sources */,
-				339EA3931F16531F0041D6E6 /* OperationChainersFactoryImplementation.swift in Sources */,
+				339EA3931F16531F0041D6E6 /* OperationChainerFactoryImplementation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,13 +662,13 @@
 				339EA3A21F1653260041D6E6 /* OperationsSchedulerImplementation.swift in Sources */,
 				339EA3AE1F1653350041D6E6 /* OperationQueue.swift in Sources */,
 				339EA3B41F1653440041D6E6 /* OperationChainConfiguratorImplementation.swift in Sources */,
-				339EA3B71F16534C0041D6E6 /* OperationBuffersFactory.swift in Sources */,
+				339EA3B71F16534C0041D6E6 /* OperationBufferFactory.swift in Sources */,
 				339EA3AA1F1653320041D6E6 /* AsyncChainableOperation.swift in Sources */,
 				339EA3AD1F1653320041D6E6 /* CompoundOperation.swift in Sources */,
 				339EA3AF1F16533F0041D6E6 /* ControlFlowOperationChainer.swift in Sources */,
 				339EA3A81F16532C0041D6E6 /* CompoundOperationQueueInput.swift in Sources */,
 				339EA3A31F1653260041D6E6 /* OperationsScheduler.swift in Sources */,
-				339EA3B81F16534C0041D6E6 /* OperationBuffersFactoryImplementation.swift in Sources */,
+				339EA3B81F16534C0041D6E6 /* OperationBufferFactoryImplementation.swift in Sources */,
 				339EA3A91F16532C0041D6E6 /* CompoundOperationQueueOutput.swift in Sources */,
 				339EA3AC1F1653320041D6E6 /* ChainableOperationBase.swift in Sources */,
 				339EA3A71F16532C0041D6E6 /* ChainableOperationOutput.swift in Sources */,
@@ -677,8 +677,8 @@
 				339EA3B31F16533F0041D6E6 /* OperationChainer.swift in Sources */,
 				339EA3B51F1653440041D6E6 /* OperationChainConfigurator.swift in Sources */,
 				339EA3A41F16532C0041D6E6 /* ChainableOperation.swift in Sources */,
-				339EA3B21F16533F0041D6E6 /* OperationChainersFactoryImplementation.swift in Sources */,
-				339EA3B11F16533F0041D6E6 /* OperationChainersFactory.swift in Sources */,
+				339EA3B21F16533F0041D6E6 /* OperationChainerFactoryImplementation.swift in Sources */,
+				339EA3B11F16533F0041D6E6 /* OperationChainerFactory.swift in Sources */,
 				339EA3B61F16534C0041D6E6 /* OperationBufferImplementation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1202,6 +1202,7 @@
 				339EA33E1F1652070041D6E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		339EA3491F16521A0041D6E6 /* Build configuration list for PBXNativeTarget "Lagoon macOS" */ = {
 			isa = XCConfigurationList;
@@ -1210,6 +1211,7 @@
 				339EA34B1F16521A0041D6E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		339EA3C81F1653840041D6E6 /* Build configuration list for PBXNativeTarget "Lagoon macOS-Tests" */ = {
 			isa = XCConfigurationList;
@@ -1218,6 +1220,7 @@
 				339EA3CA1F1653840041D6E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		339EA3D71F1653950041D6E6 /* Build configuration list for PBXNativeTarget "Lagoon iOS-Tests" */ = {
 			isa = XCConfigurationList;
@@ -1226,6 +1229,7 @@
 				339EA3D91F1653950041D6E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

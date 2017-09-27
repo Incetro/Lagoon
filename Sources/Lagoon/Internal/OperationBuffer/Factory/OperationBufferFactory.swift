@@ -1,5 +1,5 @@
 //
-//  OperationBuffersFactory.swift
+//  OperationBufferFactory.swift
 //  Lagoon
 //
 //  Created by incetro on 18/01/17.
@@ -8,13 +8,12 @@
 
 import Foundation
 
-// MARK: - OperationBuffersFactory
+// MARK: - OperationBufferFactory
 
-internal protocol OperationBuffersFactory: NSCopying {
+internal protocol OperationBufferFactory: NSCopying {
     
     /// Create buffer
     ///
     /// - Returns: OperationBuffer instance
-    
     func createChainableOperationsBuffer() -> OperationBuffer
 }

@@ -11,26 +11,18 @@ import Foundation
 // MARK: - SchedulerError
 
 enum SchedulerError {
-    
     case incorrectBufferData
-    
     case emptyData
 }
 
 extension SchedulerError: LocalizedError {
     
     var errorDescription: String? {
-        
         switch self {
-            
         case .emptyData:
-            
-            return "Buffer's data type invalid"
-            
-        case .incorrectBufferData:
-            
             return "Buffer's data cannot be empty"
-            
+        case .incorrectBufferData:
+            return "Invalid buffer's data type"
         }
     }
 }

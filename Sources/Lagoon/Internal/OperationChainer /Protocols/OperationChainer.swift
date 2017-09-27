@@ -12,11 +12,10 @@ import Foundation
 
 internal protocol OperationChainer: NSCopying {
     
-    /// Cahin 2 opertions
+    /// Chain 2 opertions
     ///
     /// - Parameters:
     ///   - firstOperation: independent operation
-    ///   - secondOperation: dependent opertaion 
-    
+    ///   - secondOperation: dependent opertaion
     func chainOperation<T: AsyncChainableOperation>(_ firstOperation: inout T, withOperation secondOperation: inout T)
 }

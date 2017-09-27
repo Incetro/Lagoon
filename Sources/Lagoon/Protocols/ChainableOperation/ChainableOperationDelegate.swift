@@ -13,12 +13,10 @@ import Foundation
 public protocol ChainableOperationDelegate {
     
     /// Operation was finished success
-    
     func operationSuccess()
     
     /// Current operation was interrupted with error
     ///
     /// - Parameter error: Operation's error
-    
     func operationFailure(withError error: Error)
 }

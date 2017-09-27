@@ -11,10 +11,7 @@ import Foundation
 // MARK: - ChainableOperation
 
 public protocol ChainableOperation {
-    
     var delegate: ChainableOperationDelegate? { get set }
-    
     var input: ChainableOperationInput? { get set }
-    
     var output: ChainableOperationOutput? { get set }
 }

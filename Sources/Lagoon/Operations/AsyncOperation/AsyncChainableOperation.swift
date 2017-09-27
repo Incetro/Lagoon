@@ -15,8 +15,6 @@ open class AsyncChainableOperation: AsyncOperation, ChainableOperation {
     // MARK: - Properties
     
     public var delegate: ChainableOperationDelegate?
-    
     public var input: ChainableOperationInput?
-    
     public var output: ChainableOperationOutput?
 }

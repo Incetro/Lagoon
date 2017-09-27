@@ -10,17 +10,15 @@ import Foundation
 
 // MARK: - OperationChainerFactory
 
-internal protocol OperationChainersFactory {
+internal protocol OperationChainerFactory {
     
     /// Creates ControlFlowOperationChainer instance
     ///
     /// - Returns: ControlFlowOperationChainer instance
-    
     func createControlFlowOperationChainer() -> ControlFlowOperationChainer
     
     /// Creates DataFlowOperationChainer instance
     ///
     /// - Returns: DataFlowOperationChainer instance
-    
     func createDataFlowOperationChainer() -> DataFlowOperationChainer
 }

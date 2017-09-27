@@ -15,6 +15,5 @@ public protocol CompoundOperationQueueInput {
     /// Set input data for operations queue
     ///
     /// - Parameter data: Input data for queue
-    
     func setOperationQueueInputData(_ data: Any)
 }

@@ -15,6 +15,5 @@ public protocol ChainableOperationOutput {
     /// Operation was completed
     ///
     /// - Parameter data: Output data
-    
     func didCompleteChainableOperation(withOutputData data: Any)
 }

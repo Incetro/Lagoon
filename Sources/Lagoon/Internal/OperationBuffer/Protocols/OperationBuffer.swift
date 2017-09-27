@@ -11,5 +11,5 @@ import Foundation
 // MARK: - OperationBuffer
 
 public protocol OperationBuffer: ChainableOperationInput, ChainableOperationOutput, CompoundOperationQueueInput, CompoundOperationQueueOutput {
-    
+
 }

@@ -18,6 +18,5 @@ internal protocol OperationChainConfigurator: NSCopying {
     ///   - chainableOperations: All chainable operations
     ///   - inputData: input data for the given operations chain
     /// - Returns: Output buffer
-    
     func configureOperationsChain<T: AsyncChainableOperation>(_ chainableOperations: [T], withInputData inputData: Any) -> OperationBuffer
 }

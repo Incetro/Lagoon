@@ -15,6 +15,5 @@ public protocol CompoundOperationQueueOutput {
     /// Returns output data from queue
     ///
     /// - Returns: Output data
-    
     func obtainOperationQueueOutputData() -> Any?
 }

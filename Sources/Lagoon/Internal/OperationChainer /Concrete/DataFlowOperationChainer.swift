@@ -16,14 +16,12 @@ internal class DataFlowOperationChainer {
     
     /// Buffers' factory
     
-    fileprivate var bufferFactory: OperationBuffersFactory
+    fileprivate var bufferFactory: OperationBufferFactory
     
     /// Private initializer
     ///
     /// - Parameter bufferFactory: Buffers' factory
-    
-    fileprivate init(withBufferFactory bufferFactory: OperationBuffersFactory) {
-        
+    fileprivate init(withBufferFactory bufferFactory: OperationBufferFactory) {
         self.bufferFactory = bufferFactory
     }
     
@@ -33,19 +31,15 @@ internal class DataFlowOperationChainer {
     ///
     /// - Parameter bufferFactory: Buffers' factory
     /// - Returns: DataFlowOperationChainer instance
-    
-    internal static func dataFlowOperationChainer(withBufferFactory bufferFactory: OperationBuffersFactory) -> DataFlowOperationChainer {
-        
+    internal static func dataFlowOperationChainer(withBufferFactory bufferFactory: OperationBufferFactory) -> DataFlowOperationChainer {
         return DataFlowOperationChainer(withBufferFactory: bufferFactory)
     }
     
     /// Default initializer
     ///
-    /// - Returns: DataFlowOperationChainer instance
-    
+    /// - Returns: DataFlowOperationChainer instanc
     internal static func defaultDataFlowOperationChainer() -> DataFlowOperationChainer {
-        
-        let bufferFactory = OperationBuffersFactoryImplementation()
+        let bufferFactory = OperationBufferFactoryImplementation()
         return DataFlowOperationChainer(withBufferFactory: bufferFactory)
     }
 }
@@ -57,7 +51,7 @@ extension DataFlowOperationChainer: OperationChainer {
     internal func chainOperation<T: AsyncChainableOperation>(_ firstOperation: inout T, withOperation secondOperation: inout T) {
         
         secondOperation.addDependency(firstOperation)
-        
+
         let buffer = bufferFactory.createChainableOperationsBuffer()
         
         firstOperation.output = buffer
@@ -66,13 +60,10 @@ extension DataFlowOperationChainer: OperationChainer {
     
     internal func copy(with zone: NSZone? = nil) -> Any {
         
-        guard let bufferFactory = self.bufferFactory.copy(with: nil) as? OperationBuffersFactory else {
-            
+        guard let bufferFactory = bufferFactory.copy(with: nil) as? OperationBufferFactory else {
             fatalError()
         }
         
-        let copy = DataFlowOperationChainer(withBufferFactory: bufferFactory)
-        
-        return copy
+        return DataFlowOperationChainer(withBufferFactory: bufferFactory)
     }
 }

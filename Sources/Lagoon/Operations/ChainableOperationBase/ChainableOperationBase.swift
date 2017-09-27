@@ -17,23 +17,15 @@ open class ChainableOperationBase<I, O>: AsyncChainableOperation {
     override open func main() {
         
         do {
-            
             if let inputData = try self.obtainInputDataWithClassValidation() as? I {
-                
                 self.process(inputData: inputData, success: { processedData in
-                    
                     self.processDataSuccess(withData: processedData)
-                    
                 }, failure: { error in
-                    
                     self.processDataFailure(withError: error)
                 })
-                
             } else {
-                
                 self.processDataFailure(withError: SchedulerError.emptyData)
             }
-            
         } catch {
             
             self.processDataFailure(withError: error as NSError)
@@ -48,9 +40,7 @@ open class ChainableOperationBase<I, O>: AsyncChainableOperation {
     ///   - inputData: Opertion's input data
     ///   - success: Success block
     ///   - failure: Failure block
-    
     open func process(inputData: I, success: @escaping (_ processedData: O) -> (), failure: @escaping  (_ error: Error) -> ()) {
-        
         fatalError("You should override the method \(#function) in a subclass")
     }
     
@@ -58,11 +48,8 @@ open class ChainableOperationBase<I, O>: AsyncChainableOperation {
     ///
     /// - Returns: Input data for current operation
     /// - Throws: Validation error
-    
     private func obtainInputDataWithClassValidation() throws -> Any? {
-        
         return try input?.obtainInputData(withTypeValidationBlock: {
-            
             return $0 is I
         })
     }
@@ -70,26 +57,18 @@ open class ChainableOperationBase<I, O>: AsyncChainableOperation {
     /// Data was processed with success
     ///
     /// - Parameter data: Output data
-    
     private func processDataSuccess(withData data: O) {
-        
         let outputData = data
-        
         output?.didCompleteChainableOperation(withOutputData: outputData)
-        
         delegate?.operationSuccess()
-        
         complete()
     }
     
     /// Data was processed with failure
     ///
     /// - Parameter error: Some error
-    
     private func processDataFailure(withError error: Error) {
-        
         delegate?.operationFailure(withError: error)
-        
         complete()
     }
 }
