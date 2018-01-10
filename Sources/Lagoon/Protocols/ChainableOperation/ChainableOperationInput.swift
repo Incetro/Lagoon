@@ -16,8 +16,8 @@ public protocol ChainableOperationInput {
     
     /// Obtain input data
     ///
-    /// - Parameter validationBlock: Block which validates input data
+    /// - Parameter validationBlock: block for input data validation
     /// - Returns: input data
-    /// - Throws: Validation error
+    /// - Throws: validation error
     func obtainInputData(withTypeValidationBlock validationBlock: ChainableOperationInputTypeValidationBlock) throws -> Any
 }

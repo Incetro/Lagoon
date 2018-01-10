@@ -16,7 +16,6 @@ enum SchedulerError {
 }
 
 extension SchedulerError: LocalizedError {
-    
     var errorDescription: String? {
         switch self {
         case .emptyData:

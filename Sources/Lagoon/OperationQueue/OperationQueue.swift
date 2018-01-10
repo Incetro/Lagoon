@@ -30,7 +30,7 @@ public extension OperationQueue {
     
     /// Create operation queue with maximum concurent operations
     ///
-    /// - Parameter isSuspended: suspended bool
+    /// - Parameter isSuspended: suspended flag
     /// - Returns: OperationQueue instance
     private static func operationQueueWithMaximumConcurentOperationsAndSuspendedState(isSuspended: Bool) -> OperationQueue {
         let queue = OperationQueue()

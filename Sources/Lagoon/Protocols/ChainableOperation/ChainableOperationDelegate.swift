@@ -17,6 +17,6 @@ public protocol ChainableOperationDelegate {
     
     /// Current operation was interrupted with error
     ///
-    /// - Parameter error: Operation's error
+    /// - Parameter error: operation error
     func operationFailure(withError error: Error)
 }

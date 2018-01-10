@@ -15,30 +15,30 @@ internal class OperationBufferImplementation {
     // MARK: - Properties
     
     /// Buffer's data
-    fileprivate var buffer: Any?
+    private var buffer: Any?
     
     // MARK: - Internal
     
     /// Update current data
     ///
-    /// - Parameter data: New data
-    fileprivate func updateBuffer(withData data: Any) {
+    /// - Parameter data: new data
+    private func updateBuffer(withData data: Any) {
         buffer = data
     }
     
     /// Get data from the current buffer
     ///
-    /// - Returns: Current data
-    fileprivate func obtainBufferData() -> Any? {
+    /// - Returns: current data
+    private func obtainBufferData() -> Any? {
         return buffer
     }
     
     /// Get data from the current buffer with validation
     ///
-    /// - Parameter validationBlock: Block which validates buffer's data
-    /// - Returns: Current data
-    /// - Throws: Validation error
-    fileprivate func obtainBufferData(withValidationBlock validationBlock: ChainableOperationInputTypeValidationBlock) throws -> Any {
+    /// - Parameter validationBlock: block which validates buffer's data
+    /// - Returns: current data
+    /// - Throws: validation error
+    private func obtainBufferData(withValidationBlock validationBlock: ChainableOperationInputTypeValidationBlock) throws -> Any {
         
         guard let data = self.obtainBufferData() else {
             throw SchedulerError.emptyData

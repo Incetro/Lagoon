@@ -12,7 +12,6 @@ import Foundation
 
 internal class OperationChainerFactoryImplementation {
     
-    
 }
 
 // MARK: - OperationChainerFactory

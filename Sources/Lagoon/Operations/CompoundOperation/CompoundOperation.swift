@@ -23,13 +23,13 @@ public class CompoundOperation<OutputDataType>: AsyncOperation {
     // MARK: - Properties
     
     /// OperationQueue with all operations
-    fileprivate let queue: OperationQueue
+    private let queue: OperationQueue
     
     /// Configurator for setup operations chain
-    fileprivate let configurator: OperationChainConfigurator
+    private let configurator: OperationChainConfigurator
     
     /// Input data (from the first operation)
-    fileprivate var inputData: Any? = nil
+    private var inputData: Any? = nil
     
     /// success block
     public var success: CompoundOperationSuccessBlock<OutputDataType>? = nil
@@ -38,10 +38,10 @@ public class CompoundOperation<OutputDataType>: AsyncOperation {
     public var failure: CompoundOperationFailureBlock? = nil
     
     /// true, if current operation was configured
-    fileprivate var isConfigured: Bool
+    private var isConfigured: Bool
     
     /// Buffer with output data
-    fileprivate var outputBuffer: OperationBuffer? = nil
+    private var outputBuffer: OperationBuffer? = nil
     
     public var maxConcurrentOperationCount: Int {
         get { return queue.maxConcurrentOperationCount }
@@ -58,7 +58,7 @@ public class CompoundOperation<OutputDataType>: AsyncOperation {
     ///
     /// - Parameters:
     ///   - queue: OperationQueue for operations
-    ///   - configurator: Configurator for setup operations chain
+    ///   - configurator: configurator for setup operations chain
     internal init(withOperationQueue queue: OperationQueue, configurator: OperationChainConfigurator) {
         self.queue = queue
         self.configurator = configurator
@@ -69,7 +69,7 @@ public class CompoundOperation<OutputDataType>: AsyncOperation {
     ///
     /// - Parameters:
     ///   - queue: OperationQueue for operations
-    ///   - configurator: Configurator for setup operations chain
+    ///   - configurator: configurator for setup operations chain
     /// - Returns: CompoundOperation instance
     internal static func compoundOperationWithOperationQueue(withOperationQueue queue: OperationQueue, configurator: OperationChainConfigurator) -> CompoundOperation {
         return CompoundOperation(withOperationQueue: queue, configurator: configurator)
@@ -77,7 +77,7 @@ public class CompoundOperation<OutputDataType>: AsyncOperation {
     
     /// Initializer
     ///
-    /// - Returns: Configurator for setup operations chain
+    /// - Returns: configurator for setup operations chain
     public static func `default`(withOutputDataType type: OutputDataType.Type) -> CompoundOperation {
         let queue = OperationQueue.suspendedOperationQueueWithMaximumConcurentOperations()
         let configurator = OperationChainConfiguratorImplementation.defaultOperationChainConfigurator()
@@ -88,7 +88,7 @@ public class CompoundOperation<OutputDataType>: AsyncOperation {
     
     /// Setup operations chain
     ///
-    /// - Parameter chainableOperations: Настраиваемые операции
+    /// - Parameter chainableOperations: all operations for setup
     public func configure<T: AsyncChainableOperation>(withChainableOperations chainableOperations: [T]) {
         configure(withChainableOperations: chainableOperations, inputData: nil)
     }
@@ -96,8 +96,8 @@ public class CompoundOperation<OutputDataType>: AsyncOperation {
     /// Setup operations chain
     ///
     /// - Parameters:
-    ///   - chainableOperations: All operations
-    ///   - inputData: Input data
+    ///   - chainableOperations: all operations for setup
+    ///   - inputData: input data
     public func configure<T: AsyncChainableOperation>(withChainableOperations chainableOperations: [T], inputData: Any?) {
         configure(withChainableOperations: chainableOperations, inputData: inputData, success: nil, failure: nil)
     }
@@ -105,28 +105,25 @@ public class CompoundOperation<OutputDataType>: AsyncOperation {
     /// Setup operations chain
     ///
     /// - Parameters:
-    ///   - chainableOperations: All operations
-    ///   - success: Success block
-    ///   - failure: Failure block
+    ///   - chainableOperations: all operations for setup
+    ///   - success: success block
+    ///   - failure: failure block
     public func configure<T: AsyncChainableOperation>(withChainableOperations chainableOperations: [T], success: CompoundOperationSuccessBlock<OutputDataType>?, failure: CompoundOperationFailureBlock?) {
         configure(withChainableOperations: chainableOperations, inputData: nil, success: success, failure: failure)
     }
     
     /// - Parameters:
-    ///   - chainableOperations: All operations
-    ///   - inputData: Input data for the first operation
-    ///   - success: Success block
-    ///   - failure: Failure block
+    ///   - chainableOperations: all operations for setup
+    ///   - inputData: input data for the first operation
+    ///   - success: success block
+    ///   - failure: failure block
     public func configure<T: AsyncChainableOperation>(withChainableOperations chainableOperations: [T], inputData: Any?, success: CompoundOperationSuccessBlock<OutputDataType>?, failure: CompoundOperationFailureBlock?) {
-        
         self.chainableOperations = chainableOperations
         self.success = success
         self.failure = failure
         self.inputData = inputData
         self.outputBuffer = configurator.configureOperationsChain(chainableOperations, withInputData: inputData as Any)
-
         addSuboperationsToQueue(chainableOperations)
-
         isConfigured = true
     }
     
@@ -136,7 +133,7 @@ public class CompoundOperation<OutputDataType>: AsyncOperation {
         }
     }
     
-    fileprivate func addSuboperationsToQueue<T: AsyncChainableOperation>(_ operations: [T]) {
+    private func addSuboperationsToQueue<T: AsyncChainableOperation>(_ operations: [T]) {
         for operation in operations {
             queue.addOperation(operation)
             operation.delegate = self
@@ -145,20 +142,21 @@ public class CompoundOperation<OutputDataType>: AsyncOperation {
     
     /// Current operation was finished success
     ///
-    /// - Parameter data: Output data
-    fileprivate func successOperation(withData data: OutputDataType) {
+    /// - Parameter data: output data
+    private func successOperation(withData data: OutputDataType) {
         finishCompoundOperationExecution()
         success?(data)
     }
     
     /// Current operation was interrupted with error
     ///
-    /// - Parameter error: Some error
-    fileprivate func failureOperation(withError error: Error) {
+    /// - Parameter error: some error
+    private func failureOperation(withError error: Error) {
         finishCompoundOperationExecution()
         failure?(error)
     }
     
+    /// Complete queue's operations
     private func finishCompoundOperationExecution() {
         queue.isSuspended = true
         queue.cancelAllOperations()

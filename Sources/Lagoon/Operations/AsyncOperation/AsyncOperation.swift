@@ -45,7 +45,6 @@ open class AsyncOperation: Operation {
     }
     
     override open func start() {
-        
         if isCancelled {
             complete()
             return
@@ -60,13 +59,10 @@ open class AsyncOperation: Operation {
     // MARK: - Internal
     
     internal func complete() {
-        
         willChangeValue(forKey: Flag.isExecuting)
         willChangeValue(forKey: Flag.isFinished)
-        
         execution.executing = false
         execution.finished  = true
-        
         didChangeValue(forKey: Flag.isFinished)
         didChangeValue(forKey: Flag.isExecuting)
     }
