@@ -33,7 +33,6 @@ Let's create example operations:
 class ConvertOperation: ChainableOperationBase<String, Int> {
     
     override func process(inputData: String, success: (Int) -> (), failure: (Error) -> ()) {
-        
         if let result = Int(inputData) {
             success(result)
         } else {
@@ -81,7 +80,6 @@ class ArrayOperation: ChainableOperationBase<Int, [Int]> {
         var number = inputData
         
         while number > 0 {
-            
             result.append(number % 10)
             number = number / 10
         }
@@ -110,11 +108,8 @@ for string in strings {
     
     /// Setup compound operation
     compoundOperation.configure(withChainableOperations: operations, inputData: string, success: { result in
-                
         print(result)
-                
     }, failure: { error in
-                
         print(error.localizedDescription)
     })
     
@@ -131,14 +126,11 @@ class RequestDataSigningOperation: ChainableOperationBase<RequestDataModel, Requ
     private let requestSigner: RequestDataSigner
     
     init(withRequestSigner requestSigner: RequestDataSigner) {
-        
         self.requestSigner = requestSigner
     }
     
     override func process(inputData: RequestDataModel, success: (RequestDataModel) -> (), failure: (Error) -> ()) {
-        
         let signedRequestDataModel = requestSigner.signRequestDataModel(inputData)
-        
         success(signedRequestDataModel)
     }
 }
@@ -153,13 +145,11 @@ class RequestConfigurationOperation: ChainableOperationBase<RequestDataModel, UR
     private let queryType: QueryType
     
     init(configurator: RequestConfigurator, method: HTTPMethod, type: QueryType, serviceName: String?, urlParameters: [String]) {
-        
-        self.requestConfigurator  = configurator
-        
-        self.method        = method
-        self.queryType     = type
-        self.serviceName   = serviceName
+        self.method = method
+        self.queryType = type
+        self.serviceName = serviceName
         self.urlParameters = urlParameters
+        self.requestConfigurator  = configurator
     }
     
     // MARK: - ChainableOperationBase
@@ -180,7 +170,6 @@ class RequestConfigurationOperation: ChainableOperationBase<RequestDataModel, UR
 /// Then use it to make network chain
 
 let operations = [
-
     requestDataSigningOperation,
     requestConfigurationOperation,
     networkRequestOperation,
@@ -191,11 +180,8 @@ let operations = [
 ]
 
 let compoundOperation = CompoundOperation.default(withOutputDataType: User.self)
-        
 compoundOperation.maxConcurrentOperationCount = 1
-        
 compoundOperation.configure(withChainableOperations: operations, inputData: inputData, success: success, failure: failure)
-
 Lagoon.add(operation: compoundOperation)
 ```
 ## Requirements
