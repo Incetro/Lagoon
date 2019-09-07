@@ -11,7 +11,7 @@ import Foundation
 // MARK: - Lagoon
 
 public class Lagoon {
-    
+
     /// Singleton
     static let instance = Lagoon()
     
@@ -21,14 +21,14 @@ public class Lagoon {
     /// Add new operation
     ///
     /// - Parameter operation: new operation
-    private func add(_ operation: Operation) {
-        scheduler.addOperation(operation)
+    private func add(operation: Operation) {
+        scheduler.add(operation: operation)
     }
     
     /// Add new operation
     ///
     /// - Parameter operation: new operation
     public static func add(operation: Operation) {
-        instance.add(operation)
+        instance.add(operation: operation)
     }
 }

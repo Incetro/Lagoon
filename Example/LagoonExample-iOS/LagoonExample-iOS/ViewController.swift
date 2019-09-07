@@ -9,13 +9,22 @@
 import UIKit
 import Lagoon
 
+enum StrToIntError: LocalizedError {
+    
+    case a
+    
+    var errorDescription: String? {
+        return "Cannot convert string to int 2"
+    }
+}
+
 class ConvertOperation: ChainableOperationBase<String, Int> {
     
     override func process(inputData: String, success: @escaping (Int) -> (), failure: @escaping (Error) -> ()) {
         if let result = Int(inputData) {
             success(result)
         } else {
-            failure(NSError(domain: "com.incetro.Lagoon.Example", code: 1, userInfo: nil))
+            failure(StrToIntError.a)
         }
     }
 }

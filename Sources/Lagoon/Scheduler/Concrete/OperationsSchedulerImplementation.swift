@@ -30,6 +30,13 @@ public class OperationsSchedulerImplementation {
     public init() {
 
     }
+
+    /// OperationQueue initializer
+    ///
+    /// - Parameter queue: target queue for all aoperations
+    public init(queue: OperationQueue) {
+        self.queue = queue
+    }
     
     // MARK: - Static initializers
     
@@ -43,7 +50,7 @@ public class OperationsSchedulerImplementation {
 
 extension OperationsSchedulerImplementation: OperationsScheduler {
     
-    public func addOperation(_ operation: Operation) {
+    public func add(operation: Operation) {
         queue.addOperation(operation)
     }
     

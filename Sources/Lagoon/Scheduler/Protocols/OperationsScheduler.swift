@@ -15,7 +15,7 @@ public protocol OperationsScheduler {
     /// Add new operation
     ///
     /// - Parameter operation: new operation
-    func addOperation(_ operation: Operation)
+    func add(operation: Operation)
     
     /// Set max concurrent operations count
     ///
