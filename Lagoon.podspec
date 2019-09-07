@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
     spec.homepage       = "https://github.com/incetro/Lagoon.git"
     spec.license        = "MIT"
     spec.authors        = { "incetro" => "incetro@ya.ru" }
-    spec.requires_arc   = truetrue
+    spec.requires_arc   = true
     spec.swift_version = "5.0"
 
     spec.ios.deployment_target = "8.0"
