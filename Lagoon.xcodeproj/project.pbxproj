@@ -65,6 +65,8 @@
 		339EA3D41F1653950041D6E6 /* Lagoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 339EA3361F1652070041D6E6 /* Lagoon.framework */; };
 		339EA3E01F1653DC0041D6E6 /* LagoonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3DA1F1653C50041D6E6 /* LagoonTests.swift */; };
 		339EA3E11F1653DC0041D6E6 /* LagoonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 339EA3DA1F1653C50041D6E6 /* LagoonTests.swift */; };
+		33A9535A233016470039CD48 /* VectorOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A95359233016470039CD48 /* VectorOperation.swift */; };
+		33A9535B233016470039CD48 /* VectorOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A95359233016470039CD48 /* VectorOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,7 @@
 		339EA3CF1F1653950041D6E6 /* Lagoon iOS-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lagoon iOS-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		339EA3DA1F1653C50041D6E6 /* LagoonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LagoonTests.swift; sourceTree = "<group>"; };
 		339EA3DC1F1653C50041D6E6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33A95359233016470039CD48 /* VectorOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -349,6 +352,7 @@
 		339EA3721F16531F0041D6E6 /* Operations */ = {
 			isa = PBXGroup;
 			children = (
+				33A953582330163C0039CD48 /* VectorOperation */,
 				339EA3731F16531F0041D6E6 /* AsyncOperation */,
 				339EA3761F16531F0041D6E6 /* ChainableOperationBase */,
 				339EA3781F16531F0041D6E6 /* CompoundOperation */,
@@ -441,6 +445,14 @@
 				339EA3DC1F1653C50041D6E6 /* Info.plist */,
 			);
 			path = Supporting;
+			sourceTree = "<group>";
+		};
+		33A953582330163C0039CD48 /* VectorOperation */ = {
+			isa = PBXGroup;
+			children = (
+				33A95359233016470039CD48 /* VectorOperation.swift */,
+			);
+			path = VectorOperation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -633,6 +645,7 @@
 				339EA38B1F16531F0041D6E6 /* OperationBufferFactory.swift in Sources */,
 				339EA3941F16531F0041D6E6 /* OperationChainer.swift in Sources */,
 				339EA39B1F16531F0041D6E6 /* ChainableOperationDelegate.swift in Sources */,
+				33A9535A233016470039CD48 /* VectorOperation.swift in Sources */,
 				339EA39E1F16531F0041D6E6 /* CompoundOperationQueueInput.swift in Sources */,
 				339EA3961F16531F0041D6E6 /* AsyncChainableOperation.swift in Sources */,
 				339EA38F1F16531F0041D6E6 /* OperationChainConfigurator.swift in Sources */,
@@ -666,6 +679,7 @@
 				339EA3B41F1653440041D6E6 /* OperationChainConfiguratorImplementation.swift in Sources */,
 				339EA3B71F16534C0041D6E6 /* OperationBufferFactory.swift in Sources */,
 				339EA3AA1F1653320041D6E6 /* AsyncChainableOperation.swift in Sources */,
+				33A9535B233016470039CD48 /* VectorOperation.swift in Sources */,
 				339EA3AD1F1653320041D6E6 /* CompoundOperation.swift in Sources */,
 				339EA3AF1F16533F0041D6E6 /* ControlFlowOperationChainer.swift in Sources */,
 				339EA3A81F16532C0041D6E6 /* CompoundOperationQueueInput.swift in Sources */,

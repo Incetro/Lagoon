@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name           = "Lagoon"
-    spec.version        = "1.1.2"
+    spec.version        = "1.2.2"
     spec.summary        = "The beautiful way to chain your services logic"
 
     spec.homepage       = "https://github.com/incetro/Lagoon.git"
